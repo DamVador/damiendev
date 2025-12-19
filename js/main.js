@@ -111,3 +111,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
+const forms = document.querySelectorAll('form[action*="formspree"]');
+forms.forEach(form => {
+    form.addEventListener('submit', function(e) {
+        // Laisser Formspree traiter
+        setTimeout(() => {
+            window.location.href = '/success.html';
+        }, 2000); // Attend 2 secondes
+    });
+});
