@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自由接案網頁開發者 | 專業網站和著陸頁</title>
+    <meta name="description" content="專業自由接案網頁開發者，專注於創建專業網站。PHP、JavaScript，為您的線上業務提供客製化解決方案。">
+    
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHK0WNXVR7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DHK0WNXVR7');
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+</head>
+<body>
+    <div class="bg-animated"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Damien.Banville</a>
+            
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul>
+                <li><a href="#services">服務</a></li>
+                <li><a href="#tarifs">價格</a></li>
+                <li><a href="#process">工作流程</a></li>
+                <li><a href="#faq">常見問題</a></li>
+                <li><a href="#contact">聯絡我</a></li>
+                <li class="lang-dropdown">
+                    <button class="lang-dropdown-toggle" aria-label="Select language">
+                        <span class="current-lang">🇹🇼</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="lang-dropdown-menu">
+                        <a href="index.html" class="lang-option">
+                            <span class="lang-flag">🇫🇷</span>
+                            <span class="lang-name">Français</span>
+                        </a>
+                        <a href="en.html" class="lang-option">
+                            <span class="lang-flag">🇬🇧</span>
+                            <span class="lang-name">English</span>
+                        </a>
+                        <a href="cn.html" class="lang-option">
+                            <span class="lang-flag">🇨🇳</span>
+                            <span class="lang-name">简体中文</span>
+                        </a>
+                        <a href="tw.html" class="lang-option active">
+                            <span class="lang-flag">🇹🇼</span>
+                            <span class="lang-name">繁體中文</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>
+                    自由接案<br>
+                    <span class="highlight">網頁開發者</span>
+                </h1>
+                <p class="subtitle">
+                    專業網頁開發專家，專注於企業網站和著陸頁，快速交付高品質專案，立即產生影響。
+                </p>
+                <div class="status">
+                    <span class="status-dot"></span>
+                    可接新專案
+                </div>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">開始專案 →</a>
+                    <a href="#tarifs" class="btn btn-secondary">查看價格</a>
+                </div>
+            </div>
+            <div class="hero-code">
+                <div class="code-content">
+                    <span class="code-line"><span class="code-keyword">const</span> developer = {</span>
+                    <span class="code-line">  <span class="code-function">experience</span>: <span class="code-string">"4+ 年"</span>,</span>
+                    <span class="code-line">  <span class="code-function">stack</span>: [<span class="code-string">"PHP"</span>, <span class="code-string">"Laravel"</span>, <span class="code-string">"Javascript"</span>, <span class="code-string">"Vue"</span>],</span>
+                    <span class="code-line">  <span class="code-function">focus</span>: <span class="code-string">"企業網站 / 著陸頁"</span>,</span>
+                    <span class="code-line">  <span class="code-comment">// 簡潔高效至上</span></span>
+                    <span class="code-line">};</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="01.">我的服務</h2>
+            <p>為您的企業提供客製化網頁解決方案</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-icon">🌐</span>
+                <h3>企業網站</h3>
+                <p>專業的線上展示，展示您的業務並吸引客戶。</p>
+                <ul>
+                    <li>現代響應式設計</li>
+                    <li>搜尋引擎最佳化（SEO）</li>
+                    <li>功能性聯絡表單</li>
+                    <li>主機配置</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">⚡</span>
+                <h3>著陸頁</h3>
+                <p>最佳化的單頁面，將訪客轉化為客戶或潛在客戶。</p>
+                <ul>
+                    <li>超快載入（< 2秒）</li>
+                    <li>注重轉換的設計</li>
+                    <li>Google Analytics配置</li>
+                    <li>清晰高效的結構</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">🔄</span>
+                <h3>網站重新設計</h3>
+                <p>以現代設計和最佳化效能更新您現有的網站。</p>
+                <ul>
+                    <li>現有網站分析</li>
+                    <li>全新響應式設計</li>
+                    <li>內容遷移</li>
+                    <li>SEO改進</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">🔧</span>
+                <h3>維護與支援</h3>
+                <p>保持您的網站始終更新和正常運作。</p>
+                <ul>
+                    <li>修復和修改</li>
+                    <li>內容更新</li>
+                    <li>快速技術支援</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section class="fade-in pourquoi-section">
+        <div>
+            <!-- Desktop/Tablet Version -->
+            <div class="pourquoi-desktop">
+                <h2 class="text-center mb-2">為什麼選擇企業網站/著陸頁？</h2>
+                
+                <div class="pourquoi-grid">
+                    <div class="pourquoi-text">
+                        <p>
+                            憑藉超過4年的網頁開發經驗，包括PHP/Javascript應用程式，我<strong>可以</strong>創建複雜的應用程式，包括複雜的後端、儀表板、會員區域...
+                        </p>
+                        <p>
+                            <strong>但我做出了策略選擇：</strong>專注於企業網站和著陸頁。<br><br>
+                            為什麼？因為大多數企業不需要複雜的應用程式。他們需要一個快速、優雅、1秒載入、將訪客轉化為客戶、且不需要5000歐元的網站。
+                        </p>
+                    </div>
+                    
+                    <div class="pourquoi-card">
+                        <h3>您的優勢：</h3>
+                        <ul class="pourquoi-list">
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">⚡</span>
+                                <div>
+                                    <strong>快速交付</strong><br>
+                                    <span>幾天到1週</span>
+                                </div>
+                            </li>
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">💰</span>
+                                <div>
+                                    <strong>合理價格（企業網站/著陸頁）</strong><br>
+                                    <span style="text-decoration: line-through; color: var(--text-dim); margin-right: 8px;">€790 / €390 </span>
+                                    <span style="color: #ff4d4d; font-weight: bold; font-size: 1.1rem;">€490 / €290</span>
+                                </div>
+                            </li>
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">🎯</span>
+                                <div>
+                                    <strong>刻意的簡潔</strong><br>
+                                    <span>無需為不必要的功能付費</span>
+                                </div>
+                            </li>
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">🚀</span>
+                                <div>
+                                    <strong>最佳效能</strong><br>
+                                    <span>超快網站，SEO最佳化</span>
+                                </div>
+                            </li>
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">✅</span>
+                                <div>
+                                    <strong>零意外</strong><br>
+                                    <span>固定價格、固定期限、明確範圍</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Version -->
+            <div class="pourquoi-mobile">
+                <h2 class="text-center mb-2">為什麼選擇網站？</h2>
+                
+                <div class="pourquoi-mobile-text">
+                    <p>
+                        憑藉超過4年的網頁開發經驗，我<strong>可以</strong>創建複雜的應用程式，包括複雜的後端、儀表板、會員區域...
+                    </p>
+                    <p>
+                        <strong>但我做出了策略選擇：</strong>專注於企業網站和著陸頁。
+                    </p>
+                    <p>
+                        為什麼？因為大多數企業需要一個快速、優雅、1秒載入的網站 - 而不是5000歐元的應用程式。
+                    </p>
+                </div>
+                
+                <h3 class="text-center mb-2">優勢：</h3>
+                
+                <div class="pourquoi-mobile-grid">
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>⚡</span>
+                            <strong>快速交付</strong>
+                        </div>
+                        <p>幾天到一週，而不是2-3個月</p>
+                    </div>
+                    
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>💰</span>
+                            <strong>合理價格</strong>
+                        </div>
+                        <p>€790而不是代理公司的€2500+</p>
+                    </div>
+                    
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>🎯</span>
+                            <strong>簡潔</strong>
+                        </div>
+                        <p>沒有不必要的功能</p>
+                    </div>
+                    
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>🚀</span>
+                            <strong>效能</strong>
+                        </div>
+                        <p>超快網站，SEO最佳化</p>
+                    </div>
+                    
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>✅</span>
+                            <strong>零意外</strong>
+                        </div>
+                        <p>固定價格、固定期限、明確範圍</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Final message -->
+            <div class="pourquoi-footer stack-note">
+                <p>
+                    <strong>我的目標：</strong>為您提供一個專業的網站來完成工作，而不向您收取不需要的功能費用。
+                </p>
+                <p>
+                    （如果您有一天需要複雜的應用程式，作為全端開發人員，我們可以討論！）
+                </p>
+                <p>
+                    💡 <strong>完整技術堆疊：</strong>PHP、Laravel、Vue.js、MySQL，可用於更複雜的專案
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="tarifs" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="02.">價格</h2>
+            <p>透明、無意外、適合您的預算</p>
+        </div>
+
+        <div class="pricing-grid">
+            <!-- Landing Page -->
+            <div class="pricing-card-standard">
+                <div class="pricing-header">
+                    <h3 class="pricing-title pricing-title-standard">著陸頁</h3>
+                    <div class="pricing-old-price">€390</div>
+                    <div class="pricing-price">
+                        €290<span class="pricing-price-suffix"> 未稅</span>
+                    </div>
+                    <p class="pricing-promo">
+                        節省€100 - 限時優惠
+                    </p>
+                </div>
+                
+                <ul class="pricing-features-list">
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">1個最佳化的單頁面</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">注重轉換的設計</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">聯絡表單</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">配置Google Analytics</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">配置主機</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">交付原始碼</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">2-3天交付</span>
+                    </li>
+                </ul>
+
+                <div class="pricing-cta">
+                    <a href="#contact" class="btn btn-secondary full-width">請求報價</a>
+                </div>
+            </div>
+
+            <!-- Professional Website - FEATURED -->
+            <div class="pricing-card-featured">
+                <div class="pricing-badge">🔥 發布優惠</div>
+                
+                <div class="pricing-header">
+                    <h3 class="pricing-title pricing-title-featured">完整企業網站</h3>
+                    <div class="pricing-old-price">€790</div>
+                    <div class="pricing-price">
+                        €490<span class="pricing-price-suffix"> 未稅</span>
+                    </div>
+                    <p class="pricing-promo">
+                        節省€300 - 限時優惠
+                    </p>
+                </div>
+                
+                <ul class="pricing-features-list">
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text-bold">最多5個完整部分/頁面</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">現代100%響應式設計</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">帶反垃圾郵件的表單</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">技術SEO最佳化（標籤、HTML結構、效能）</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">配置Google Analytics</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">最佳化效能</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">配置主機</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text-bold">交付原始碼 - 100%所有權</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">15天支援（錯誤修復）</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">1週交付</span>
+                    </li>
+                </ul>
+
+                <div class="pricing-cta">
+                    <a href="#contact" class="btn btn-primary full-width">獲取此優惠 →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional services -->
+        <div class="pricing-options">
+            <h4>📦 附加服務</h4>
+            <div class="pricing-options-grid">
+                <ul class="pricing-options-list">
+                    <li class="pricing-options-item">• 附加部分/頁面：<span class="pricing-options-price">+€60</span></li>
+                    <li class="pricing-options-item">• 撰寫+整合內容：<span class="pricing-options-price">+€60/頁</span></li>
+                    <li class="pricing-options-item">• 交付後修改：<span class="pricing-options-price">15天免費（錯誤修復、小調整、拼寫更正），然後€40/小時</span></li>
+                </ul>
+                <ul class="pricing-options-list">
+                    <li class="pricing-options-item">• 網域配置：<span class="pricing-options-price">+€30</span></li>
+                    <li class="pricing-options-item">• 一次性支援：<span class="pricing-options-price">1小時套餐：€40</span></li>
+                </ul>
+            </div>
+            <p class="pricing-options-note">
+                ℹ️ 透過Netlify免費託管（100 GB/月，對於此類專案綽綽有餘）。網域名稱（約€12/年）由客戶單獨購買。
+            </p>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="03.">工作流程</h2>
+            <p>高效的工作流程保證結果</p>
+        </div>
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-number">步驟 1</div>
+                <h3>討論與報價</h3>
+                <p>討論您的需求、目標和預算。準備詳細報價和規格。</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">步驟 2</div>
+                <h3>原型與設計</h3>
+                <p>創建視覺原型以在開發前驗證您網站的外觀。</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">步驟 3</div>
+                <h3>開發</h3>
+                <p>使用最佳實務進行網站編碼。效能和SEO最佳化。</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">步驟 4</div>
+                <h3>測試與修正</h3>
+                <p>在所有裝置上進行全面測試。根據您的回饋進行修正和調整。</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">步驟 5</div>
+                <h3>上線</h3>
+                <p>在您的主機上部署網站。快速培訓以管理您的內容。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="04.">常見問題</h2>
+            <p>最常見問題的答案</p>
+        </div>
+
+        <div class="faq-container">
+            <!-- Question 1 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">❓</span>
+                    <span class="faq-question-text">什麼是技術SEO最佳化？</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        這是對您網站結構和程式碼的最佳化，使其能夠被Google正確理解和索引。這包括：
+                    </p>
+                    <ul>
+                        <li><strong>元標籤</strong>：最佳化的標題和描述</li>
+                        <li><strong>HTML結構</strong>：清晰的層次結構（H1、H2、H3）</li>
+                        <li><strong>圖像</strong>：描述性alt屬性</li>
+                        <li><strong>效能</strong>：快速載入（< 2秒）</li>
+                        <li><strong>響應式</strong>：行動裝置和平板電腦最佳化</li>
+                        <li><strong>技術檔案</strong>：Sitemap.xml和robots.txt</li>
+                    </ul>
+                    <p>
+                        <strong>總結：</strong>您的網站將「為Google準備好」並最佳化以出現在搜尋結果中。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">🎯</span>
+                    <span class="faq-question-text">我的網站會在Google首頁嗎？</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        我實施的技術SEO<strong>為您的網站準備Google</strong>，但排名取決於幾個因素：
+                    </p>
+                    <ul>
+                        <li><strong>競爭</strong>：您所在行業有多少其他網站？</li>
+                        <li><strong>時間</strong>：自然SEO至少需要3到6個月</li>
+                        <li><strong>內容</strong>：文字的品質和數量</li>
+                        <li><strong>權威性</strong>：外部連結、網域年齡</li>
+                    </ul>
+                    <p>
+                        <strong>我保證的是：</strong>您的網站將結構化、快速且「SEO就緒」。但我不能保證特定位置。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">✏️</span>
+                    <span class="faq-question-text">之後我可以自己修改網站嗎？</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>是的，當然！網站100%屬於您。</p>
+                    <p>✅ <strong>您擁有原始碼：</strong></p>
+                    <ul>
+                        <li>交付完整程式碼</li>
+                        <li>無依賴性</li>
+                        <li>完全自由</li>
+                    </ul>
+                    <p>📝 <strong>可能的修改：</strong></p>
+                    <ul>
+                        <li>簡單：文字、圖像、聯絡方式</li>
+                        <li>技術性：設計、部分、表單</li>
+                    </ul>
+                    <p>👥 <strong>三個選項：</strong> </p>
+                    <ul>
+                        <li>您自己（文件+培訓）</li>
+                        <li>我（€40/小時套餐）</li>
+                        <li>任何開發人員（標準程式碼）</li>
+                    </ul>
+
+                    💡 重要：您永遠不會「被困」在我這裡
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">🛠️</span>
+                    <span class="faq-question-text">15天支援期後會怎樣？</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>15天支援</strong>包括：</p>
+                    <ul>
+                        <li>✅ 錯誤修復</li>
+                        <li>✅ 小調整（顏色、間距）</li>
+                        <li>✅ 文字/圖像修改</li>
+                        <li>✅ 技術支援（電子郵件、電話）</li>
+                    </ul>
+                    <p><strong>15天後：</strong></p>
+                    <ul>
+                        <li>€40/小時套餐</li>
+                        <li>根據您的需求可選的持續支援</li>
+                    </ul>
+                    <p>
+                        <strong>重要：</strong>網站100%屬於您。您可以使用任何開發人員（交付原始碼）。您也可以自己進行修改。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">💼</span>
+                    <span class="faq-question-text">為什麼選擇自由接案者而不是代理公司？</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>自由接案者的好處：</strong></p>
+                    <ul>
+                        <li><strong>更合理的價格</strong>：代理公司必然需要更高的營運成本</li>
+                        <li><strong>直接聯繫</strong>：您直接與開發人員交談</li>
+                        <li><strong>靈活性</strong>：快速適應您的要求</li>
+                        <li><strong>響應能力</strong>：快速回應</li>
+                    </ul>
+                    <p><strong>何時選擇代理公司？</strong></p>
+                    <ul>
+                        <li>非常複雜的專案（客製化應用程式、50+頁面）</li>
+                        <li>需要完整團隊（設計師+開發+行銷）</li>
+                        <li>大量預算（€5000+）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">⚙️</span>
+                    <span class="faq-question-text">您製作複雜的應用程式嗎？</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>我專注於企業網站和著陸頁。</strong></p>
+                    <p><strong>為什麼做這個選擇？</strong></p>
+                    <ul>
+                        <li>✅ 幾天/週內快速交付，而不是幾個月</li>
+                        <li>✅ 合理價格：最高€790，而不是€3000-10000</li>
+                        <li>✅ 簡潔：沒有複雜的錯誤</li>
+                        <li>✅ 效率：許多企業只需要一個簡單的網站</li>
+                    </ul>
+                    <p><strong>但是，作為全端開發人員，我願意討論。</strong></p>
+                    <p><strong>我也認識優秀的全端開發人員可以推薦。</strong></p>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">📄</span>
+                    <span class="faq-question-text">著陸頁和企業網站有什麼區別？</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>著陸頁（€390）：</strong></p>
+                    <ul>
+                        <li>📄 <strong>1個單一目標頁面</strong></li>
+                        <li>🎯 <strong>精確目標</strong>：銷售、收集電子郵件、推廣</li>
+                        <li>⚡ <strong>快速</strong>：2-3天</li>
+                        <li>💰 <strong>預算有限</strong>：經濟解決方案</li>
+                    </ul>
+                    <p><strong>範例：</strong>產品發布、網路研討會註冊、廣告活動</p>
+                    
+                    <p><strong>企業網站（€790）：</strong></p>
+                    <ul>
+                        <li>📚 <strong>最多5個完整部分/頁面</strong></li>
+                        <li>🏢 <strong>整體展示</strong>：公司、服務、團隊</li>
+                        <li>📈 <strong>更完整</strong>：多個目標</li>
+                        <li>⏱️ <strong>1週</strong></li>
+                    </ul>
+                    <p><strong>範例：</strong>麵包店網站、醫療診所、手工藝人</p>
+                    
+                    <p><strong>如何選擇？</strong></p>
+                    <ul>
+                        <li>✅ 著陸頁：一次性需求、活動</li>
+                        <li>✅ 網站：持久的網路存在</li>
+                    </ul>
+                    <p>💡 您可以從著陸頁開始，然後升級到網站（+€300）。</p>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">🎁</span>
+                    <span class="faq-question-text">推薦計畫如何運作？</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>您認識需要網站的人嗎？</strong></p>
+                    <p>推薦我的服務，每個完成的專案<strong>獲得15%的佣金</strong>！</p>
+                    
+                    <p>💰 <strong>如何運作：</strong></p>
+                    <ol>
+                        <li>您向您的聯絡人推薦我的服務</li>
+                        <li>您的聯絡人聯絡我並成為客戶</li>
+                        <li>專案交付並全額付款</li>
+                        <li>您透過轉帳<strong>收到金額的15%（未稅）</strong></li>
+                    </ol>
+                    
+                    <p>📊 <strong>佣金範例：</strong></p>
+                    <ul>
+                        <li>著陸頁（€490）→ 您獲得<strong>€73.50</strong></li>
+                        <li>企業網站（€790）→ 您獲得<strong>€118.50</strong></li>
+                        <li>重新設計（根據報價）→ 金額的<strong>15%</strong></li>
+                    </ul>
+                    
+                    <p>✅ <strong>條件：</strong></p>
+                    <ul>
+                        <li>客戶全額付款後支付佣金</li>
+                        <li>7個工作日內轉帳</li>
+                        <li>無限累積（推薦10個客戶=10筆佣金）</li>
+                        <li>適用於所有專案類型</li>
+                        <li>如果您是專業人士，需要發票</li>
+                    </ul>
+                    
+                    <p>🤝 <strong>簡單且雙贏：</strong>您的聯絡人以合理價格獲得專業網站，您因推薦而獲得獎勵！</p>
+                    
+                    <p>💡 <strong>感興趣？</strong>聯絡我瞭解更多詳情。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA after FAQ -->
+        <div class="faq-cta">
+            <p>還有其他問題嗎？</p>
+            <a href="#contact" class="btn btn-primary">聯絡我 →</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="05.">聯絡我</h2>
+            <p>讓我們談談您的專案</p>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrapper">
+            <div class="contact-form-card">
+                <h3 class="contact-form-title">📧 免費報價請求</h3>
+                
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" netlify action="/success.html">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p style="display: none;">
+                        <label>請勿填寫：<input name="bot-field" /></label>
+                    </p>
+
+                    <div class="form-group">
+                        <label for="name">全名 *</label>
+                        <input type="text" id="name" name="name" required placeholder="您的姓名" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">電子郵件 *</label>
+                        <input type="email" id="email" name="email" required placeholder="contact@example.com" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">電話</label>
+                        <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project">專案類型 *</label>
+                        <select id="project" name="project" required>
+                            <option value="">-- 選擇 --</option>
+                            <option value="site-vitrine">企業網站</option>
+                            <option value="landing-page">著陸頁</option>
+                            <option value="refonte">現有網站重新設計</option>
+                            <option value="maintenance">維護</option>
+                            <option value="autre">其他</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">描述您的專案 *</label>
+                        <textarea id="message" name="message" required rows="6" placeholder="描述您的需求、目標、期望的時間表..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full-width">
+                        發送我的請求 →
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Contact info -->
+        <div class="contact-grid">
+            <div class="contact-item email">
+                <span class="contact-icon">📧</span>
+                <h3>電子郵件</h3>
+                <a href="mailto:damienbanville@hotmail.fr">damienbanville@hotmail.fr</a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">📱</span>
+                <h3>Whatsapp</h3>
+                <a href="tel:+33606579020">+33 6 06 57 90 20</a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">💼</span>
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/damien-banville-213523109/" target="_blank" class="social-link">
+                    /我的個人資料 →
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <h3>位置</h3>
+                <p class="contact-location">巴黎大區（法國）<br>遠端工作<br>可以出差</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="referral-program">
+            <p class="referral-text">
+                💡 推薦計畫：任何成功推薦<strong>15%佣金</strong>。
+                感興趣？聯絡我瞭解更多詳情。
+            </p>
+        </div>
+        <p>&copy; 2025 - Damien 自由接案網頁開發者</p>
+        <p>用心設計和開發 ❤️</p>
+        <p style="font-size: 0.85rem; margin-top: 1rem; color: var(--text-dim);">
+            本網站使用Google Analytics來衡量受眾。
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

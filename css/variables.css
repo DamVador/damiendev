@@ -1,0 +1,39 @@
+/* ============================================
+   VARIABLES CSS
+   ============================================ */
+
+:root {
+    /* Couleurs principales */
+    --primary: #0A0E27;
+    --accent: #00D9FF;
+    --accent-dark: #0099FF;
+    --secondary: #FF6B35;
+    
+    /* Couleurs de texte */
+    --text: #E8E9ED;
+    --text-dim: #9BA4B5;
+    
+    /* Couleurs de fond */
+    --bg: #0F1419;
+    --bg-card: #1A1F2E;
+    --bg-elevated: #252B3B;
+    
+    /* Polices */
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-sans: 'Outfit', sans-serif;
+    
+    /* Espacements */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+    
+    /* Bordures */
+    --border-radius: 12px;
+    --border-radius-sm: 8px;
+    
+    /* Transitions */
+    --transition-fast: 0.3s;
+    --transition-medium: 0.6s;
+}

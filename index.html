@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Développeur Web Freelance | Sites Vitrines & Applications</title>
+    <meta name="description" content="Développeur web freelance spécialisé en création de sites vitrines. PHP, JavaScript, solutions sur-mesure pour votre présence en ligne.">
+    
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHK0WNXVR7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DHK0WNXVR7');
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+</head>
+<body>
+    <div class="bg-animated"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Damien.Banville</a>
+            
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tarifs">Tarifs</a></li>
+                <li><a href="#process">Processus de Travail</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="lang-dropdown">
+                    <button class="lang-dropdown-toggle" aria-label="Select language">
+                        <span class="current-lang">🇫🇷</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="lang-dropdown-menu">
+                        <a href="index.html" class="lang-option active">
+                            <span class="lang-flag">🇫🇷</span>
+                            <span class="lang-name">Français</span>
+                        </a>
+                        <a href="en.html" class="lang-option">
+                            <span class="lang-flag">🇬🇧</span>
+                            <span class="lang-name">English</span>
+                        </a>
+                        <a href="cn.html" class="lang-option">
+                            <span class="lang-flag">🇨🇳</span>
+                            <span class="lang-name">简体中文</span>
+                        </a>
+                        <a href="tw.html" class="lang-option">
+                            <span class="lang-flag">🇹🇼</span>
+                            <span class="lang-name">繁體中文</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>
+                    Développeur Web<br>
+                    <span class="highlight">Freelance</span>
+                </h1>
+                <p class="subtitle">
+                    Expert en développement web, je me concentre sur les sites vitrines et landing pages pour livrer rapidement des projets de qualité à impact immédiat.
+                </p>
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Disponible pour nouveaux projets
+                </div>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Démarrer un projet →</a>
+                    <a href="#tarifs" class="btn btn-secondary">Voir les tarifs</a>
+                </div>
+            </div>
+            <div class="hero-code">
+                <div class="code-content">
+                    <span class="code-line"><span class="code-keyword">const</span> developer = {</span>
+                    <span class="code-line">  <span class="code-function">experience</span>: <span class="code-string">"4+ ans"</span>,</span>
+                    <span class="code-line">  <span class="code-function">stack</span>: [<span class="code-string">"PHP"</span>, <span class="code-string">"Laravel"</span>, <span class="code-string">"Javascript"</span>, <span class="code-string">"Vue"</span>],</span>
+                    <span class="code-line">  <span class="code-function">focus</span>: <span class="code-string">"Sites vitrines / landing page"</span>,</span>
+                    <span class="code-line">  <span class="code-comment">// Simplicité & efficacité avant tout</span></span>
+                    <span class="code-line">};</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="01.">Mes Services</h2>
+            <p>Solutions web sur-mesure pour votre entreprise</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-icon">🌐</span>
+                <h3>Site Vitrine</h3>
+                <p>Une présence en ligne professionnelle pour présenter votre activité et attirer des clients.</p>
+                <ul>
+                    <li>Design moderne et responsive</li>
+                    <li>Optimisé pour le référencement (SEO)</li>
+                    <li>Formulaire de contact fonctionnel</li>
+                    <li>Configuration de l'hébergement</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">⚡</span>
+                <h3>Landing Page</h3>
+                <p>Page unique optimisée pour convertir vos visiteurs en clients ou prospects.</p>
+                <ul>
+                    <li>Chargement ultra-rapide (< 2 sec)</li>
+                    <li>Design axé sur la conversion</li>
+                    <li>Google Analytics configuré</li>
+                    <li>Structure claire et efficace</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">🔄</span>
+                <h3>Refonte de Site</h3>
+                <p>Modernisez votre site existant avec un design actuel et des performances optimisées.</p>
+                <ul>
+                    <li>Analyse de l'existant</li>
+                    <li>Nouveau design responsive</li>
+                    <li>Migration du contenu</li>
+                    <li>Amélioration SEO</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">🔧</span>
+                <h3>Maintenance & Support</h3>
+                <p>Gardez votre site à jour et fonctionnel dans le temps.</p>
+                <ul>
+                    <li>Corrections et modifications</li>
+                    <li>Mise à jour de contenu</li>
+                    <li>Support technique réactif</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi Sites Vitrines Section -->
+    <section class="fade-in pourquoi-section">
+        <div>
+            <!-- Version Desktop/Tablette -->
+            <div class="pourquoi-desktop">
+                <h2 class="text-center mb-2">Pourquoi des sites vitrines / page de lancement ?</h2>
+                
+                <div class="pourquoi-grid">
+                    <div class="pourquoi-text">
+                        <p>
+                            Avec plus de 4 ans d'expérience en développement web avec notamment des applications PHP/Javascript je <strong>pourrais</strong> créer des applications complexes avec backends sophistiqués, dashboards, espaces membres...
+                        </p>
+                        <p>
+                            <strong>Mais j'ai fait un choix stratégique :</strong> me concentrer sur les sites vitrines et landing pages. <br><br>
+                            Pourquoi ? Parce que la plupart des entreprises n'ont pas besoin d'une application complexe. Elles ont besoin d'un site rapide, élégant, qui charge en 1 seconde, qui convertit les visiteurs en clients, et qui ne coûte pas 5000€.
+
+                        </p>
+                        <p>
+                            <!-- Pourquoi ? Parce que la plupart des entreprises n'ont pas besoin d'une application complexe. Elles ont besoin d'un site rapide, élégant, qui charge en 1 seconde, qui convertit les visiteurs en clients, et qui ne coûte pas 5000€. -->
+                        </p>
+                    </div>
+                    
+                    <div class="pourquoi-card">
+                        <h3>Les avantages pour vous :</h3>
+                        <ul class="pourquoi-list">
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">⚡</span>
+                                <div>
+                                    <strong>Livraison rapide</strong><br>
+                                    <span>Quelques jours à 1 semaine</span>
+                                </div>
+                            </li>
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">💰</span>
+                                <div>
+                                    <strong>Prix justes (site vitrine / landing page)</strong><br>
+                                    <!-- <span>790€</span> -->
+                                    <span style="text-decoration: line-through; color: var(--text-dim); margin-right: 8px;">790€ / 390€ </span>
+                                    <span style="color: #ff4d4d; font-weight: bold; font-size: 1.1rem;">490€ / 290€</span>
+                                </div>
+                            </li>
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">🎯</span>
+                                <div>
+                                    <strong>Simplicité assumée</strong><br>
+                                    <span>Pas de fonctionnalités inutiles à payer</span>
+                                </div>
+                            </li>
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">🚀</span>
+                                <div>
+                                    <strong>Performance maximale</strong><br>
+                                    <span>Sites ultra-rapides, SEO optimisé</span>
+                                </div>
+                            </li>
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">✅</span>
+                                <div>
+                                    <strong>Zéro surprise</strong><br>
+                                    <span>Prix fixe, délai fixe, périmètre clair</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Version Mobile -->
+            <div class="pourquoi-mobile">
+                <h2 class="text-center mb-2">Pourquoi sites vitrines ?</h2>
+                
+                <div class="pourquoi-mobile-text">
+                    <p>
+                        Avec plus de 4 ans d'expérience en développement web je <strong>pourrais</strong> créer des applications complexes avec backends sophistiqués, dashboards, espaces membres...
+                    </p>
+                    <p>
+                        <strong>Mais j'ai fait un choix stratégique :</strong> me concentrer sur les sites vitrines et landing pages.
+                    </p>
+                    <p>
+                        Pourquoi ? Parce que la plupart des entreprises ont besoin d'un site rapide, élégant, qui charge en 1 seconde - pas d'une application à 5000€.
+                    </p>
+                </div>
+                
+                <h3 class="text-center mb-2">Les avantages :</h3>
+                
+                <div class="pourquoi-mobile-grid">
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>⚡</span>
+                            <strong>Livraison rapide</strong>
+                        </div>
+                        <p>quelques jours à une semaine au lieu de 2-3 mois</p>
+                    </div>
+                    
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>💰</span>
+                            <strong>Prix justes</strong>
+                        </div>
+                        <p>790€ au lieu de 2500€+ en agence</p>
+                    </div>
+                    
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>🎯</span>
+                            <strong>Simplicité</strong>
+                        </div>
+                        <p>Pas de fonctionnalités inutiles</p>
+                    </div>
+                    
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>🚀</span>
+                            <strong>Performance</strong>
+                        </div>
+                        <p>Sites ultra-rapides, SEO optimisé</p>
+                    </div>
+                    
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>✅</span>
+                            <strong>Zéro surprise</strong>
+                        </div>
+                        <p>Prix fixe, délai fixe, périmètre clair</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Message final -->
+            <div class="pourquoi-footer stack-note">
+                <p>
+                    <strong>Mon objectif :</strong> Vous livrer un site professionnel qui fait le job, sans vous faire payer pour des fonctionnalités dont vous n'avez pas besoin.
+                </p>
+                <p>
+                    (Et si un jour vous avez besoin d'une app complexe, étant aussi développeur fullstack, on peut en discuter !)
+                </p>
+                <p>
+                    💡 <strong>Stack complète :</strong> PHP, Laravel, Vue.js, MySQL pour des projets plus complexes si nécessaire
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack Section -->
+    <!-- <section id="stack" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="02.">Technologies</h2>
+            <p>Des outils modernes pour des résultats exceptionnels</p>
+        </div>
+        <div class="stack-grid">
+            <div class="stack-category">
+                <h3>// Frontend</h3>
+                <div class="stack-tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Responsive</span>
+                </div>
+            </div>
+
+            <div class="stack-category">
+                <h3>// Performance & SEO</h3>
+                <div class="stack-tags">
+                    <span class="tag">SEO</span>
+                    <span class="tag">Analytics</span>
+                    <span class="tag">PageSpeed</span>
+                    <span class="tag">Mobile-First</span>
+                </div>
+            </div>
+
+            <div class="stack-category">
+                <h3>// Déploiement</h3>
+                <div class="stack-tags">
+                    <span class="tag">Git</span>
+                    <span class="tag">Netlify</span>
+                    <span class="tag">Cloudflare</span>
+                    <span class="tag">CI/CD</span>
+                </div>
+            </div>
+
+            <div class="stack-category">
+                <h3>// Outils</h3>
+                <div class="stack-tags">
+                    <span class="tag">VS Code</span>
+                    <span class="tag">Chrome DevTools</span>
+                    <span class="tag">Figma (lecture)</span>
+                </div>
+            </div>
+        </div>        
+    </section> -->
+
+    <!-- Pricing Section -->
+    <section id="tarifs" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="02.">Tarification</h2>
+            <p>Transparent, sans surprise, adapté à votre budget</p>
+        </div>
+
+        <div class="pricing-grid">
+            <!-- Landing Page -->
+            <div class="pricing-card-standard">
+                <div class="pricing-header">
+                    <h3 class="pricing-title pricing-title-standard">Landing Page</h3>
+                    <div class="pricing-old-price">390€</div>
+                    <div class="pricing-price">
+                        290€<span class="pricing-price-suffix"> HT</span>
+                    </div>
+                    <p class="pricing-promo">
+                        Économisez 100€ - Offre limitée
+                    </p>
+                    <!-- <p class="pricing-subtitle">Pour un besoin ponctuel</p> -->
+                </div>
+                
+                <ul class="pricing-features-list">
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">1 page unique optimisée</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Design axé sur la conversion</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Formulaire de contact</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Google Analytics configuré</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Hébergement configuré</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Code source livré</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Livraison 2-3 jours</span>
+                    </li>
+                </ul>
+
+                <div class="pricing-cta">
+                    <a href="#contact" class="btn btn-secondary full-width">Demander un devis</a>
+                </div>
+            </div>
+
+            <!-- Site Vitrine - FEATURED -->
+            <div class="pricing-card-featured">
+                <div class="pricing-badge">🔥 OFFRE LANCEMENT</div>
+                
+                <div class="pricing-header">
+                    <h3 class="pricing-title pricing-title-featured">Site Vitrine Complet</h3>
+                    <div class="pricing-old-price">790€</div>
+                    <div class="pricing-price">
+                        490€<span class="pricing-price-suffix"> HT</span>
+                    </div>
+                    <p class="pricing-promo">
+                        Économisez 300€ - Offre limitée
+                    </p>
+                </div>
+                
+                <ul class="pricing-features-list">
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text-bold">jusqu'à 5 sections / pages complètes</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Design moderne et 100% responsive</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Formulaire avec anti-spam</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Optimisation SEO technique (balises, structure HTML, performances)</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Google Analytics configuré</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Performance optimisée</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Hébergement configuré</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text-bold">Code source livré - 100% propriétaire</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Support 15 jours (bugs)</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Livraison 1 semaine</span>
+                    </li>
+                </ul>
+
+                <div class="pricing-cta">
+                    <a href="#contact" class="btn btn-primary full-width">Profiter de l'offre →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Options supplémentaires -->
+        <div class="pricing-options">
+            <h4>📦 Prestations supplémentaires</h4>
+            <div class="pricing-options-grid">
+                <ul class="pricing-options-list">
+                    <li class="pricing-options-item">• Section / Page supplémentaire : <span class="pricing-options-price">+60€</span></li>
+                    <li class="pricing-options-item">• Rédaction + intégration de contenu : <span class="pricing-options-price">+60€/page</span></li>
+                    <li class="pricing-options-item">• Modifications post-livraison : <span class="pricing-options-price"> GRATUIT pendant 15 jours (corrections de bug, ajustements mineurs, corrections typo), puis 40€/h</span></li>
+                </ul>
+                <ul class="pricing-options-list">
+                    <li class="pricing-options-item">• Configuration domaine : <span class="pricing-options-price">+30€</span></li>
+                    <li class="pricing-options-item">• Support ponctuel : <span class="pricing-options-price">Forfait 1h : 40€</span></li>
+                </ul>
+            </div>
+            <p class="pricing-options-note">
+                ℹ️ L'hébergement est gratuit via Netlify (100 GB/mois, largement assez pour ce genre de projet). Le nom de domaine (~12€/an) est à acheter séparément par le client.
+            </p>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="03.">Process</h2>
+            <p>Un workflow efficace pour des résultats garantis</p>
+        </div>
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-number">ÉTAPE 1</div>
+                <h3>Échange & Devis</h3>
+                <p>Discussion sur vos besoins, objectifs et budget. Élaboration d'un devis détaillé et d'un cahier des charges.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">ÉTAPE 2</div>
+                <h3>Maquette & Design</h3>
+                <p>Création de maquettes visuelles pour valider l'apparence de votre site avant développement.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">ÉTAPE 3</div>
+                <h3>Développement</h3>
+                <p>Codage du site avec les meilleures pratiques. Optimisation des performances et du référencement.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">ÉTAPE 4</div>
+                <h3>Tests & Corrections</h3>
+                <p>Tests approfondis sur tous les appareils. Corrections et ajustements selon vos retours.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">ÉTAPE 5</div>
+                <h3>Mise en Ligne</h3>
+                <p>Déploiement du site sur votre hébergement. Formation rapide pour gérer votre contenu.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="04.">Questions Fréquentes</h2>
+            <p>Réponses aux questions les plus posées</p>
+        </div>
+
+        <div class="faq-container">
+            <!-- Question 1 : SEO Technique -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">❓</span>
+                    <span class="faq-question-text">Qu'est-ce que l'optimisation SEO technique ?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        C'est l'optimisation de la structure et du code de votre site pour qu'il soit bien compris 
+                        et indexé par Google. Cela inclut :
+                    </p>
+                    <ul>
+                        <li><strong>Balises meta</strong> : Title et description optimisés</li>
+                        <li><strong>Structure HTML</strong> : Hiérarchie claire (H1, H2, H3)</li>
+                        <li><strong>Images</strong> : Attributs alt descriptifs</li>
+                        <li><strong>Performance</strong> : Chargement rapide (< 2 sec)</li>
+                        <li><strong>Responsive</strong> : Adapté mobile et tablette</li>
+                        <li><strong>Fichiers techniques</strong> : Sitemap.xml et robots.txt</li>
+                    </ul>
+                    <p>
+                        <strong>En résumé :</strong> Votre site sera "prêt pour Google" et optimisé pour 
+                        apparaître dans les résultats de recherche.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 2 : Première page Google -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">🎯</span>
+                    <span class="faq-question-text">Mon site sera-t-il en première page Google ?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Le SEO technique que je mets en place <strong>prépare votre site pour Google</strong>, 
+                        mais le classement dépend de plusieurs facteurs :
+                    </p>
+                    <ul>
+                        <li><strong>La concurrence</strong> : Combien d'autres sites dans votre secteur ?</li>
+                        <li><strong>Le temps</strong> : Le SEO naturel prend 3 à 6 mois minimum</li>
+                        <li><strong>Le contenu</strong> : Qualité et quantité de vos textes</li>
+                        <li><strong>L'autorité</strong> : Liens externes, ancienneté du domaine</li>
+                    </ul>
+                    <p>
+                        <strong>Ce que je garantis :</strong> Votre site sera structuré, rapide et "SEO-ready". 
+                        Mais je ne peux pas garantir une position spécifique.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 4 : Modifier le site -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">✏️</span>
+                    <span class="faq-question-text">Puis-je modifier le site moi-même après ?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>Oui, absolument ! Le site vous appartient à 100%.</p>
+                    <p>✅ <strong>Vous êtes propriétaire du code source :</strong></p>
+                    <ul>
+                        <li>Code livré en intégralité</li>
+                        <li>Aucune dépendance</li>
+                        <li>Liberté totale</li>
+                    </ul>
+                    <p>📝  <strong>Modifications possibles :</strong></p>
+                    <ul>
+                        <li>Faciles : Textes, images, contact</li>
+                        <li>Techniques : Design, sections, formulaire</li>
+                    </ul>
+                    <p>👥 <strong>Trois options :</strong> </p>
+                    <ul>
+                        <li>Vous-même (documentation + formation)</li>
+                        <li>Moi (forfait 40€/h)</li>
+                        <li>N'importe quel développeur (code standard)</li>
+                    </ul>
+
+                    💡 Important : Vous n'êtes jamais "coincé" avec moi
+                </div>
+            </div>
+
+            <!-- Question 5 : Après support -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">🛠️</span>
+                    <span class="faq-question-text">Que se passe-t-il après les 15 jours de support ?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Les <strong>15 jours de support</strong> incluent :</p>
+                    <ul>
+                        <li>✅ Correction de bugs</li>
+                        <li>✅ Ajustements mineurs (couleurs, espacements)</li>
+                        <li>✅ Modifications de textes/images</li>
+                        <li>✅ Support technique (email, téléphone)</li>
+                    </ul>
+                    <p><strong>Après les 15 jours :</strong></p>
+                    <ul>
+                        <li>Forfait 40€/h </li>
+                        <li>Support continu optionnel selon vos besoins</li>
+                    </ul>
+                    <p>
+                        <strong>Important :</strong> Le site vous appartient à 100%. Vous pouvez faire appel 
+                        à n'importe quel développeur (code source livré). Vous pouvez également faire les modifications vous même.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 6 : Freelance vs Agence -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">💼</span>
+                    <span class="faq-question-text">Pourquoi choisir un freelance plutôt qu'une agence ?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>Avantages d'un freelance :</strong></p>
+                    <ul>
+                        <li><strong>Prix plus justes</strong> : une agence necessite forcément des frais de fonctionnement plus élevés</li>
+                        <li><strong>Contact direct</strong> : Vous parlez au développeur directement</li>
+                        <li><strong>Flexibilité</strong> : Adaptation rapide à vos demandes</li>
+                        <li><strong>Réactivité</strong> : Réponse rapide</li>
+                    </ul>
+                    <p><strong>Quand choisir une agence ?</strong></p>
+                    <ul>
+                        <li>Projet très complexe (application custom, +50 pages)</li>
+                        <li>Équipe complète nécessaire (designer + dev + marketing)</li>
+                        <li>Budget conséquent (5000€+)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">⚙️</span>
+                    <span class="faq-question-text">Est-ce que vous faites des applications complexes ?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>Je me concentre sur les sites vitrines et landing pages.</strong></p>
+                    <p><strong>Pourquoi ce choix ?</strong></p>
+                    <ul>
+                        <li>✅ Livraison rapide en quelques jours / semaine au lieu de plusieurs mois</li>
+                        <li>✅ Prix justes : jusqu'à 790€ au lieu de 3000-10000€</li>
+                        <li>✅ Simplicité : Pas de bugs complexes</li>
+                        <li>✅ Efficacité : Beaucoup d'entreprises ont juste besoin d'un site simple</li>
+                    </ul>
+                    <p><strong>Néammoins, étant développeur fullstack je suis ouvert à la discussion.</strong></p>
+                    <p><strong>Je connais aussi d'excellents développeurs fullstack à recommander.</strong></p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">📄</span>
+                    <span class="faq-question-text">Différence entre Landing Page et Site Vitrine ?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>Landing Page (390€) :</strong></p>
+                    <ul>
+                        <li>📄 <strong>1 seule page</strong> unique et ciblée</li>
+                        <li>🎯 <strong>Objectif précis</strong> : vendre, collecter emails, promouvoir</li>
+                        <li>⚡ <strong>Rapide</strong> : 2-3 jours</li>
+                        <li>💰 <strong>Budget serré</strong> : Solution économique</li>
+                    </ul>
+                    <p><strong>Exemple :</strong> Lancement produit, inscription webinaire, campagne pub</p>
+                    
+                    <p><strong>Site Vitrine (790€) :</strong></p>
+                    <ul>
+                        <li>📚 <strong>jusqu'à 5 sections / pages</strong> complètes</li>
+                        <li>🏢 <strong>Présentation globale</strong> : entreprise, services, équipe</li>
+                        <li>📈 <strong>Plus complet</strong> : plusieurs objectifs</li>
+                        <li>⏱️ <strong>1 semaine</strong></li>
+                    </ul>
+                    <p><strong>Exemple :</strong> Site boulangerie, cabinet médical, artisan</p>
+                    
+                    <p><strong>Comment choisir ?</strong></p>
+                    <ul>
+                        <li>✅ Landing : Besoin ponctuel, événement</li>
+                        <li>✅ Vitrine : Présence web durable</li>
+                    </ul>
+                    <p>💡 Vous pouvez commencer par une Landing, puis évoluer vers Vitrine (+300€).</p>
+                </div>
+            </div>
+
+            <!-- Question 9: la question 9 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">🎁</span>
+                    <span class="faq-question-text">Comment fonctionne le programme de parrainage ?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>Vous connaissez quelqu'un qui a besoin d'un site web ?</strong></p>
+                    <p>Recommandez mes services et <strong>recevez 15% de commission</strong> sur chaque projet abouti !</p>
+                    
+                    <p>💰 <strong>Comment ça marche :</strong></p>
+                    <ol>
+                        <li>Vous recommandez mes services à votre contact</li>
+                        <li>Votre contact me contacte et devient client</li>
+                        <li>Le projet est livré et payé intégralement</li>
+                        <li>Vous recevez <strong>15% du montant HT</strong> par virement</li>
+                    </ol>
+                    
+                    <p>📊 <strong>Exemples de commission :</strong></p>
+                    <ul>
+                        <li>Landing Page (490€) → <strong>73,50€</strong> pour vous</li>
+                        <li>Site Vitrine (790€) → <strong>118,50€</strong> pour vous</li>
+                        <li>Refonte (sur devis) → <strong>15%</strong> du montant</li>
+                    </ul>
+                    
+                    <p>✅ <strong>Conditions :</strong></p>
+                    <ul>
+                        <li>Commission versée après paiement complet du client</li>
+                        <li>Virement sous 7 jours ouvrés</li>
+                        <li>Cumulable sans limite (recommandez 10 clients = 10 commissions)</li>
+                        <li>Valable sur tous les types de projets</li>
+                        <li>Facture requise si vous êtes professionnel</li>
+                    </ul>
+                    
+                    <p>🤝 <strong>Simple et gagnant-gagnant :</strong> Votre contact obtient un site pro à prix juste, vous êtes récompensé pour la recommandation !</p>
+                    
+                    <p>💡 <strong>Intéressé ?</strong> Contactez-moi pour plus de détails.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA après FAQ -->
+        <div class="faq-cta">
+            <p>Une autre question ?</p>
+            <a href="#contact" class="btn btn-primary">Contactez-moi →</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="05.">Contact</h2>
+            <p>Parlons de votre projet</p>
+        </div>
+
+        <!-- Formulaire -->
+        <div class="contact-form-wrapper">
+            <div class="contact-form-card">
+                <h3 class="contact-form-title">📧 Demande de Devis Gratuit</h3>
+                
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" netlify action="/success.html">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p style="display: none;">
+                        <label>Ne pas remplir : <input name="bot-field" /></label>
+                    </p>
+
+                    <div class="form-group">
+                        <label for="name">Nom complet *</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre Nom" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="contact@exemple.fr" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project">Type de projet *</label>
+                        <select id="project" name="project" required>
+                            <option value="">-- Sélectionnez --</option>
+                            <option value="site-vitrine">Site Vitrine</option>
+                            <option value="landing-page">Landing Page</option>
+                            <option value="refonte">Refonte de site existant</option>
+                            <option value="maintenance">Maintenance</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label for="budget">Budget estimé</label>
+                        <select id="budget" name="budget">
+                            <option value="">-- Sélectionnez --</option>
+                            <option value="moins-500">Moins de 500€</option>
+                            <option value="500-1000">500€ - 1000€</option>
+                            <option value="1000-2000">1000€ - 2000€</option>
+                            <option value="plus-2000">Plus de 2000€</option>
+                        </select>
+                    </div> -->
+
+                    <div class="form-group">
+                        <label for="message">Décrivez votre projet *</label>
+                        <textarea id="message" name="message" required rows="6" placeholder="Décrivez votre besoin, vos objectifs, votre délai souhaité..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full-width">
+                        Envoyer ma demande →
+                    </button>
+
+                    <!-- <p class="form-note">
+                        ⚡ Réponse sous 24h maximum
+                    </p> -->
+                </form>
+            </div>
+        </div>
+
+        <!-- Infos de contact -->
+        <div class="contact-grid">
+            <div class="contact-item email">
+                <span class="contact-icon">📧</span>
+                <h3>Email</h3>
+                <a href="mailto:damienbanville@hotmail.fr">damienbanville@hotmail.fr</a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">📱</span>
+                <h3>Whatsapp</h3>
+                <a href="tel:+33606579020">+33 6 06 57 90 20</a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">💼</span>
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/damien-banville-213523109/" target="_blank" class="social-link">
+                    /mon-profil →
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <h3>Localisation</h3>
+                <p class="contact-location">Île-de-France<br>Interventions à distance <br>Déplacements possible</p>
+            </div>
+        </div>
+
+        <!-- <div class="contact-response-card">
+            <h3>Temps de réponse</h3>
+            <p>Je réponds généralement sous 24h. Pour les demandes urgentes, n'hésitez pas à me contacter par téléphone.</p>
+        </div> -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="referral-program">
+            <p class="referral-text">
+                💡 Programme de parrainage : <strong>15% de commission</strong> 
+                pour toute recommandation aboutie. Intéressé ? Contactez-moi pour plus de détails.
+            </p>
+        </div>
+        <p>&copy; 2025 - Damien Développeur Web Freelance</p>
+        <!-- <p>SIRET: À compléter | Micro-entrepreneur</p> -->
+        <p>Conçu et développé avec passion ❤️</p>
+        <p style="font-size: 0.85rem; margin-top: 1rem; color: var(--text-dim);">
+            Ce site utilise Google Analytics pour mesurer l'audience.
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

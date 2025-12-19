@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自由职业网页开发者 | 专业网站和着陆页</title>
+    <meta name="description" content="专业自由职业网页开发者，专注于创建专业网站。PHP、JavaScript，为您的在线业务提供定制解决方案。">
+    
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHK0WNXVR7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DHK0WNXVR7');
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+</head>
+<body>
+    <div class="bg-animated"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Damien.Banville</a>
+            
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul>
+                <li><a href="#services">服务</a></li>
+                <li><a href="#tarifs">价格</a></li>
+                <li><a href="#process">工作流程</a></li>
+                <li><a href="#faq">常见问题</a></li>
+                <li><a href="#contact">联系我</a></li>
+                <li class="lang-dropdown">
+                    <button class="lang-dropdown-toggle" aria-label="Select language">
+                        <span class="current-lang">🇨🇳</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="lang-dropdown-menu">
+                        <a href="index.html" class="lang-option">
+                            <span class="lang-flag">🇫🇷</span>
+                            <span class="lang-name">Français</span>
+                        </a>
+                        <a href="en.html" class="lang-option">
+                            <span class="lang-flag">🇬🇧</span>
+                            <span class="lang-name">English</span>
+                        </a>
+                        <a href="cn.html" class="lang-option active">
+                            <span class="lang-flag">🇨🇳</span>
+                            <span class="lang-name">简体中文</span>
+                        </a>
+                        <a href="tw.html" class="lang-option">
+                            <span class="lang-flag">🇹🇼</span>
+                            <span class="lang-name">繁體中文</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>
+                    自由职业<br>
+                    <span class="highlight">网页开发者</span>
+                </h1>
+                <p class="subtitle">
+                    专业网页开发专家，专注于企业网站和着陆页，快速交付高质量项目，立即产生影响。
+                </p>
+                <div class="status">
+                    <span class="status-dot"></span>
+                    可接新项目
+                </div>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">开始项目 →</a>
+                    <a href="#tarifs" class="btn btn-secondary">查看价格</a>
+                </div>
+            </div>
+            <div class="hero-code">
+                <div class="code-content">
+                    <span class="code-line"><span class="code-keyword">const</span> developer = {</span>
+                    <span class="code-line">  <span class="code-function">experience</span>: <span class="code-string">"4+ 年"</span>,</span>
+                    <span class="code-line">  <span class="code-function">stack</span>: [<span class="code-string">"PHP"</span>, <span class="code-string">"Laravel"</span>, <span class="code-string">"Javascript"</span>, <span class="code-string">"Vue"</span>],</span>
+                    <span class="code-line">  <span class="code-function">focus</span>: <span class="code-string">"企业网站 / 着陆页"</span>,</span>
+                    <span class="code-line">  <span class="code-comment">// 简洁高效至上</span></span>
+                    <span class="code-line">};</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="01.">我的服务</h2>
+            <p>为您的企业提供定制网页解决方案</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-icon">🌐</span>
+                <h3>企业网站</h3>
+                <p>专业的在线展示，展示您的业务并吸引客户。</p>
+                <ul>
+                    <li>现代响应式设计</li>
+                    <li>搜索引擎优化（SEO）</li>
+                    <li>功能性联系表单</li>
+                    <li>主机配置</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">⚡</span>
+                <h3>着陆页</h3>
+                <p>优化的单页面，将访客转化为客户或潜在客户。</p>
+                <ul>
+                    <li>超快加载（< 2秒）</li>
+                    <li>注重转化的设计</li>
+                    <li>Google Analytics配置</li>
+                    <li>清晰高效的结构</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">🔄</span>
+                <h3>网站重新设计</h3>
+                <p>以现代设计和优化性能更新您现有的网站。</p>
+                <ul>
+                    <li>现有网站分析</li>
+                    <li>全新响应式设计</li>
+                    <li>内容迁移</li>
+                    <li>SEO改进</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">🔧</span>
+                <h3>维护与支持</h3>
+                <p>保持您的网站始终更新和正常运行。</p>
+                <ul>
+                    <li>修复和修改</li>
+                    <li>内容更新</li>
+                    <li>快速技术支持</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section class="fade-in pourquoi-section">
+        <div>
+            <!-- Desktop/Tablet Version -->
+            <div class="pourquoi-desktop">
+                <h2 class="text-center mb-2">为什么选择企业网站/着陆页？</h2>
+                
+                <div class="pourquoi-grid">
+                    <div class="pourquoi-text">
+                        <p>
+                            凭借超过4年的网页开发经验，包括PHP/Javascript应用程序，我<strong>可以</strong>创建复杂的应用程序，包括复杂的后端、仪表板、会员区域...
+                        </p>
+                        <p>
+                            <strong>但我做出了战略选择：</strong>专注于企业网站和着陆页。<br><br>
+                            为什么？因为大多数企业不需要复杂的应用程序。他们需要一个快速、优雅、1秒加载、将访客转化为客户、且不需要5000欧元的网站。
+                        </p>
+                    </div>
+                    
+                    <div class="pourquoi-card">
+                        <h3>您的优势：</h3>
+                        <ul class="pourquoi-list">
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">⚡</span>
+                                <div>
+                                    <strong>快速交付</strong><br>
+                                    <span>几天到1周</span>
+                                </div>
+                            </li>
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">💰</span>
+                                <div>
+                                    <strong>合理价格（企业网站/着陆页）</strong><br>
+                                    <span style="text-decoration: line-through; color: var(--text-dim); margin-right: 8px;">€790 / €390 </span>
+                                    <span style="color: #ff4d4d; font-weight: bold; font-size: 1.1rem;">€490 / €290</span>
+                                </div>
+                            </li>
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">🎯</span>
+                                <div>
+                                    <strong>刻意的简洁</strong><br>
+                                    <span>无需为不必要的功能付费</span>
+                                </div>
+                            </li>
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">🚀</span>
+                                <div>
+                                    <strong>最佳性能</strong><br>
+                                    <span>超快网站，SEO优化</span>
+                                </div>
+                            </li>
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">✅</span>
+                                <div>
+                                    <strong>零意外</strong><br>
+                                    <span>固定价格、固定期限、明确范围</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Version -->
+            <div class="pourquoi-mobile">
+                <h2 class="text-center mb-2">为什么选择网站？</h2>
+                
+                <div class="pourquoi-mobile-text">
+                    <p>
+                        凭借超过4年的网页开发经验，我<strong>可以</strong>创建复杂的应用程序，包括复杂的后端、仪表板、会员区域...
+                    </p>
+                    <p>
+                        <strong>但我做出了战略选择：</strong>专注于企业网站和着陆页。
+                    </p>
+                    <p>
+                        为什么？因为大多数企业需要一个快速、优雅、1秒加载的网站 - 而不是5000欧元的应用程序。
+                    </p>
+                </div>
+                
+                <h3 class="text-center mb-2">优势：</h3>
+                
+                <div class="pourquoi-mobile-grid">
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>⚡</span>
+                            <strong>快速交付</strong>
+                        </div>
+                        <p>几天到一周，而不是2-3个月</p>
+                    </div>
+                    
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>💰</span>
+                            <strong>合理价格</strong>
+                        </div>
+                        <p>€790而不是代理公司的€2500+</p>
+                    </div>
+                    
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>🎯</span>
+                            <strong>简洁</strong>
+                        </div>
+                        <p>没有不必要的功能</p>
+                    </div>
+                    
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>🚀</span>
+                            <strong>性能</strong>
+                        </div>
+                        <p>超快网站，SEO优化</p>
+                    </div>
+                    
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>✅</span>
+                            <strong>零意外</strong>
+                        </div>
+                        <p>固定价格、固定期限、明确范围</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Final message -->
+            <div class="pourquoi-footer stack-note">
+                <p>
+                    <strong>我的目标：</strong>为您提供一个专业的网站来完成工作，而不向您收取不需要的功能费用。
+                </p>
+                <p>
+                    （如果您有一天需要复杂的应用程序，作为全栈开发人员，我们可以讨论！）
+                </p>
+                <p>
+                    💡 <strong>完整技术栈：</strong>PHP、Laravel、Vue.js、MySQL，可用于更复杂的项目
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="tarifs" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="02.">价格</h2>
+            <p>透明、无意外、适合您的预算</p>
+        </div>
+
+        <div class="pricing-grid">
+            <!-- Landing Page -->
+            <div class="pricing-card-standard">
+                <div class="pricing-header">
+                    <h3 class="pricing-title pricing-title-standard">着陆页</h3>
+                    <div class="pricing-old-price">€390</div>
+                    <div class="pricing-price">
+                        €290<span class="pricing-price-suffix"> 不含税</span>
+                    </div>
+                    <p class="pricing-promo">
+                        节省€100 - 限时优惠
+                    </p>
+                </div>
+                
+                <ul class="pricing-features-list">
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">1个优化的单页面</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">注重转化的设计</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">联系表单</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">配置Google Analytics</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">配置主机</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">交付源代码</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">2-3天交付</span>
+                    </li>
+                </ul>
+
+                <div class="pricing-cta">
+                    <a href="#contact" class="btn btn-secondary full-width">请求报价</a>
+                </div>
+            </div>
+
+            <!-- Professional Website - FEATURED -->
+            <div class="pricing-card-featured">
+                <div class="pricing-badge">🔥 发布优惠</div>
+                
+                <div class="pricing-header">
+                    <h3 class="pricing-title pricing-title-featured">完整企业网站</h3>
+                    <div class="pricing-old-price">€790</div>
+                    <div class="pricing-price">
+                        €490<span class="pricing-price-suffix"> 不含税</span>
+                    </div>
+                    <p class="pricing-promo">
+                        节省€300 - 限时优惠
+                    </p>
+                </div>
+                
+                <ul class="pricing-features-list">
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text-bold">最多5个完整部分/页面</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">现代100%响应式设计</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">带反垃圾邮件的表单</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">技术SEO优化（标签、HTML结构、性能）</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">配置Google Analytics</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">优化性能</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">配置主机</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text-bold">交付源代码 - 100%所有权</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">15天支持（错误修复）</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">1周交付</span>
+                    </li>
+                </ul>
+
+                <div class="pricing-cta">
+                    <a href="#contact" class="btn btn-primary full-width">获取此优惠 →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional services -->
+        <div class="pricing-options">
+            <h4>📦 附加服务</h4>
+            <div class="pricing-options-grid">
+                <ul class="pricing-options-list">
+                    <li class="pricing-options-item">• 附加部分/页面：<span class="pricing-options-price">+€60</span></li>
+                    <li class="pricing-options-item">• 撰写+集成内容：<span class="pricing-options-price">+€60/页</span></li>
+                    <li class="pricing-options-item">• 交付后修改：<span class="pricing-options-price">15天免费（错误修复、小调整、拼写更正），然后€40/小时</span></li>
+                </ul>
+                <ul class="pricing-options-list">
+                    <li class="pricing-options-item">• 域名配置：<span class="pricing-options-price">+€30</span></li>
+                    <li class="pricing-options-item">• 一次性支持：<span class="pricing-options-price">1小时套餐：€40</span></li>
+                </ul>
+            </div>
+            <p class="pricing-options-note">
+                ℹ️ 通过Netlify免费托管（100 GB/月，对于此类项目绰绰有余）。域名（约€12/年）由客户单独购买。
+            </p>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="03.">工作流程</h2>
+            <p>高效的工作流程保证结果</p>
+        </div>
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-number">步骤 1</div>
+                <h3>讨论与报价</h3>
+                <p>讨论您的需求、目标和预算。准备详细报价和规格。</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">步骤 2</div>
+                <h3>原型与设计</h3>
+                <p>创建视觉原型以在开发前验证您网站的外观。</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">步骤 3</div>
+                <h3>开发</h3>
+                <p>使用最佳实践进行网站编码。性能和SEO优化。</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">步骤 4</div>
+                <h3>测试与修正</h3>
+                <p>在所有设备上进行全面测试。根据您的反馈进行修正和调整。</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">步骤 5</div>
+                <h3>上线</h3>
+                <p>在您的主机上部署网站。快速培训以管理您的内容。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="04.">常见问题</h2>
+            <p>最常见问题的答案</p>
+        </div>
+
+        <div class="faq-container">
+            <!-- Question 1 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">❓</span>
+                    <span class="faq-question-text">什么是技术SEO优化？</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        这是对您网站结构和代码的优化，使其能够被Google正确理解和索引。这包括：
+                    </p>
+                    <ul>
+                        <li><strong>元标签</strong>：优化的标题和描述</li>
+                        <li><strong>HTML结构</strong>：清晰的层次结构（H1、H2、H3）</li>
+                        <li><strong>图像</strong>：描述性alt属性</li>
+                        <li><strong>性能</strong>：快速加载（< 2秒）</li>
+                        <li><strong>响应式</strong>：移动设备和平板电脑优化</li>
+                        <li><strong>技术文件</strong>：Sitemap.xml和robots.txt</li>
+                    </ul>
+                    <p>
+                        <strong>总结：</strong>您的网站将"为Google准备好"并优化以出现在搜索结果中。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">🎯</span>
+                    <span class="faq-question-text">我的网站会在Google首页吗？</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        我实施的技术SEO<strong>为您的网站准备Google</strong>，但排名取决于几个因素：
+                    </p>
+                    <ul>
+                        <li><strong>竞争</strong>：您所在行业有多少其他网站？</li>
+                        <li><strong>时间</strong>：自然SEO至少需要3到6个月</li>
+                        <li><strong>内容</strong>：文本的质量和数量</li>
+                        <li><strong>权威性</strong>：外部链接、域名年龄</li>
+                    </ul>
+                    <p>
+                        <strong>我保证的是：</strong>您的网站将结构化、快速且"SEO就绪"。但我不能保证特定位置。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">✏️</span>
+                    <span class="faq-question-text">之后我可以自己修改网站吗？</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>是的，当然！网站100%属于您。</p>
+                    <p>✅ <strong>您拥有源代码：</strong></p>
+                    <ul>
+                        <li>交付完整代码</li>
+                        <li>无依赖性</li>
+                        <li>完全自由</li>
+                    </ul>
+                    <p>📝 <strong>可能的修改：</strong></p>
+                    <ul>
+                        <li>简单：文本、图像、联系方式</li>
+                        <li>技术性：设计、部分、表单</li>
+                    </ul>
+                    <p>👥 <strong>三个选项：</strong> </p>
+                    <ul>
+                        <li>您自己（文档+培训）</li>
+                        <li>我（€40/小时套餐）</li>
+                        <li>任何开发人员（标准代码）</li>
+                    </ul>
+
+                    💡 重要：您永远不会"被困"在我这里
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">🛠️</span>
+                    <span class="faq-question-text">15天支持期后会怎样？</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>15天支持</strong>包括：</p>
+                    <ul>
+                        <li>✅ 错误修复</li>
+                        <li>✅ 小调整（颜色、间距）</li>
+                        <li>✅ 文本/图像修改</li>
+                        <li>✅ 技术支持（电子邮件、电话）</li>
+                    </ul>
+                    <p><strong>15天后：</strong></p>
+                    <ul>
+                        <li>€40/小时套餐</li>
+                        <li>根据您的需求可选的持续支持</li>
+                    </ul>
+                    <p>
+                        <strong>重要：</strong>网站100%属于您。您可以使用任何开发人员（交付源代码）。您也可以自己进行修改。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">💼</span>
+                    <span class="faq-question-text">为什么选择自由职业者而不是代理公司？</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>自由职业者的好处：</strong></p>
+                    <ul>
+                        <li><strong>更合理的价格</strong>：代理公司必然需要更高的运营成本</li>
+                        <li><strong>直接联系</strong>：您直接与开发人员交谈</li>
+                        <li><strong>灵活性</strong>：快速适应您的要求</li>
+                        <li><strong>响应能力</strong>：快速响应</li>
+                    </ul>
+                    <p><strong>何时选择代理公司？</strong></p>
+                    <ul>
+                        <li>非常复杂的项目（定制应用程序、50+页面）</li>
+                        <li>需要完整团队（设计师+开发+营销）</li>
+                        <li>大量预算（€5000+）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">⚙️</span>
+                    <span class="faq-question-text">您制作复杂的应用程序吗？</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>我专注于企业网站和着陆页。</strong></p>
+                    <p><strong>为什么做这个选择？</strong></p>
+                    <ul>
+                        <li>✅ 几天/周内快速交付，而不是几个月</li>
+                        <li>✅ 合理价格：最高€790，而不是€3000-10000</li>
+                        <li>✅ 简洁：没有复杂的错误</li>
+                        <li>✅ 效率：许多企业只需要一个简单的网站</li>
+                    </ul>
+                    <p><strong>但是，作为全栈开发人员，我愿意讨论。</strong></p>
+                    <p><strong>我也认识优秀的全栈开发人员可以推荐。</strong></p>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">📄</span>
+                    <span class="faq-question-text">着陆页和企业网站有什么区别？</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>着陆页（€390）：</strong></p>
+                    <ul>
+                        <li>📄 <strong>1个单一目标页面</strong></li>
+                        <li>🎯 <strong>精确目标</strong>：销售、收集电子邮件、推广</li>
+                        <li>⚡ <strong>快速</strong>：2-3天</li>
+                        <li>💰 <strong>预算有限</strong>：经济解决方案</li>
+                    </ul>
+                    <p><strong>示例：</strong>产品发布、网络研讨会注册、广告活动</p>
+                    
+                    <p><strong>企业网站（€790）：</strong></p>
+                    <ul>
+                        <li>📚 <strong>最多5个完整部分/页面</strong></li>
+                        <li>🏢 <strong>整体展示</strong>：公司、服务、团队</li>
+                        <li>📈 <strong>更完整</strong>：多个目标</li>
+                        <li>⏱️ <strong>1周</strong></li>
+                    </ul>
+                    <p><strong>示例：</strong>面包店网站、医疗诊所、手工艺人</p>
+                    
+                    <p><strong>如何选择？</strong></p>
+                    <ul>
+                        <li>✅ 着陆页：一次性需求、活动</li>
+                        <li>✅ 网站：持久的网络存在</li>
+                    </ul>
+                    <p>💡 您可以从着陆页开始，然后升级到网站（+€300）。</p>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">🎁</span>
+                    <span class="faq-question-text">推荐计划如何运作？</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>您认识需要网站的人吗？</strong></p>
+                    <p>推荐我的服务，每个完成的项目<strong>获得15%的佣金</strong>！</p>
+                    
+                    <p>💰 <strong>如何运作：</strong></p>
+                    <ol>
+                        <li>您向您的联系人推荐我的服务</li>
+                        <li>您的联系人联系我并成为客户</li>
+                        <li>项目交付并全额付款</li>
+                        <li>您通过转账<strong>收到金额的15%（不含税）</strong></li>
+                    </ol>
+                    
+                    <p>📊 <strong>佣金示例：</strong></p>
+                    <ul>
+                        <li>着陆页（€490）→ 您获得<strong>€73.50</strong></li>
+                        <li>企业网站（€790）→ 您获得<strong>€118.50</strong></li>
+                        <li>重新设计（根据报价）→ 金额的<strong>15%</strong></li>
+                    </ul>
+                    
+                    <p>✅ <strong>条件：</strong></p>
+                    <ul>
+                        <li>客户全额付款后支付佣金</li>
+                        <li>7个工作日内转账</li>
+                        <li>无限累积（推荐10个客户=10笔佣金）</li>
+                        <li>适用于所有项目类型</li>
+                        <li>如果您是专业人士，需要发票</li>
+                    </ul>
+                    
+                    <p>🤝 <strong>简单且双赢：</strong>您的联系人以合理价格获得专业网站，您因推荐而获得奖励！</p>
+                    
+                    <p>💡 <strong>感兴趣？</strong>联系我了解更多详情。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA after FAQ -->
+        <div class="faq-cta">
+            <p>还有其他问题吗？</p>
+            <a href="#contact" class="btn btn-primary">联系我 →</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="05.">联系我</h2>
+            <p>让我们谈谈您的项目</p>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrapper">
+            <div class="contact-form-card">
+                <h3 class="contact-form-title">📧 免费报价请求</h3>
+                
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" netlify action="/success.html">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p style="display: none;">
+                        <label>请勿填写：<input name="bot-field" /></label>
+                    </p>
+
+                    <div class="form-group">
+                        <label for="name">全名 *</label>
+                        <input type="text" id="name" name="name" required placeholder="您的姓名" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">电子邮件 *</label>
+                        <input type="email" id="email" name="email" required placeholder="contact@example.com" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">电话</label>
+                        <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project">项目类型 *</label>
+                        <select id="project" name="project" required>
+                            <option value="">-- 选择 --</option>
+                            <option value="site-vitrine">企业网站</option>
+                            <option value="landing-page">着陆页</option>
+                            <option value="refonte">现有网站重新设计</option>
+                            <option value="maintenance">维护</option>
+                            <option value="autre">其他</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">描述您的项目 *</label>
+                        <textarea id="message" name="message" required rows="6" placeholder="描述您的需求、目标、期望的时间表..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full-width">
+                        发送我的请求 →
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Contact info -->
+        <div class="contact-grid">
+            <div class="contact-item email">
+                <span class="contact-icon">📧</span>
+                <h3>电子邮件</h3>
+                <a href="mailto:damienbanville@hotmail.fr">damienbanville@hotmail.fr</a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">📱</span>
+                <h3>Whatsapp</h3>
+                <a href="tel:+33606579020">+33 6 06 57 90 20</a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">💼</span>
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/damien-banville-213523109/" target="_blank" class="social-link">
+                    /我的个人资料 →
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <h3>位置</h3>
+                <p class="contact-location">巴黎大区（法国）<br>远程工作<br>可以出差</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="referral-program">
+            <p class="referral-text">
+                💡 推荐计划：任何成功推荐<strong>15%佣金</strong>。
+                感兴趣？联系我了解更多详情。
+            </p>
+        </div>
+        <p>&copy; 2025 - Damien 自由职业网页开发者</p>
+        <p>用心设计和开发 ❤️</p>
+        <p style="font-size: 0.85rem; margin-top: 1rem; color: var(--text-dim);">
+            本网站使用Google Analytics来衡量受众。
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

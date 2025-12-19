@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Web Developer | Professional Websites & Landing Pages</title>
+    <meta name="description" content="Freelance web developer specialized in creating professional websites. PHP, JavaScript, custom solutions for your online presence.">
+    
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHK0WNXVR7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DHK0WNXVR7');
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+</head>
+<body>
+    <div class="bg-animated"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Damien.Banville</a>
+            
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tarifs">Pricing</a></li>
+                <li><a href="#process">Work Process</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="lang-dropdown">
+                    <button class="lang-dropdown-toggle" aria-label="Select language">
+                        <span class="current-lang">🇬🇧</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="lang-dropdown-menu">
+                        <a href="index.html" class="lang-option">
+                            <span class="lang-flag">🇫🇷</span>
+                            <span class="lang-name">Français</span>
+                        </a>
+                        <a href="en.html" class="lang-option active">
+                            <span class="lang-flag">🇬🇧</span>
+                            <span class="lang-name">English</span>
+                        </a>
+                        <a href="cn.html" class="lang-option">
+                            <span class="lang-flag">🇨🇳</span>
+                            <span class="lang-name">简体中文</span>
+                        </a>
+                        <a href="tw.html" class="lang-option">
+                            <span class="lang-flag">🇹🇼</span>
+                            <span class="lang-name">繁體中文</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>
+                    Freelance Web<br>
+                    <span class="highlight">Developer</span>
+                </h1>
+                <p class="subtitle">
+                    Expert web developer focused on professional websites and landing pages, delivering quality projects with immediate impact quickly.
+                </p>
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Available for new projects
+                </div>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Start a project →</a>
+                    <a href="#tarifs" class="btn btn-secondary">View pricing</a>
+                </div>
+            </div>
+            <div class="hero-code">
+                <div class="code-content">
+                    <span class="code-line"><span class="code-keyword">const</span> developer = {</span>
+                    <span class="code-line">  <span class="code-function">experience</span>: <span class="code-string">"4+ years"</span>,</span>
+                    <span class="code-line">  <span class="code-function">stack</span>: [<span class="code-string">"PHP"</span>, <span class="code-string">"Laravel"</span>, <span class="code-string">"Javascript"</span>, <span class="code-string">"Vue"</span>],</span>
+                    <span class="code-line">  <span class="code-function">focus</span>: <span class="code-string">"Websites / Landing pages"</span>,</span>
+                    <span class="code-line">  <span class="code-comment">// Simplicity & efficiency above all</span></span>
+                    <span class="code-line">};</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="01.">My Services</h2>
+            <p>Custom web solutions for your business</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-icon">🌐</span>
+                <h3>Professional Website</h3>
+                <p>A professional online presence to showcase your business and attract clients.</p>
+                <ul>
+                    <li>Modern and responsive design</li>
+                    <li>Optimized for search engines (SEO)</li>
+                    <li>Functional contact form</li>
+                    <li>Hosting configuration</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">⚡</span>
+                <h3>Landing Page</h3>
+                <p>Single page optimized to convert your visitors into customers or leads.</p>
+                <ul>
+                    <li>Ultra-fast loading (< 2 sec)</li>
+                    <li>Conversion-focused design</li>
+                    <li>Google Analytics configured</li>
+                    <li>Clear and efficient structure</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">🔄</span>
+                <h3>Website Redesign</h3>
+                <p>Modernize your existing website with current design and optimized performance.</p>
+                <ul>
+                    <li>Analysis of existing site</li>
+                    <li>New responsive design</li>
+                    <li>Content migration</li>
+                    <li>SEO improvement</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <span class="service-icon">🔧</span>
+                <h3>Maintenance & Support</h3>
+                <p>Keep your website up-to-date and functional over time.</p>
+                <ul>
+                    <li>Fixes and modifications</li>
+                    <li>Content updates</li>
+                    <li>Responsive technical support</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section class="fade-in pourquoi-section">
+        <div>
+            <!-- Desktop/Tablet Version -->
+            <div class="pourquoi-desktop">
+                <h2 class="text-center mb-2">Why websites / landing pages?</h2>
+                
+                <div class="pourquoi-grid">
+                    <div class="pourquoi-text">
+                        <p>
+                            With over 4 years of experience in web development, including PHP/Javascript applications, I <strong>could</strong> create complex applications with sophisticated backends, dashboards, member areas...
+                        </p>
+                        <p>
+                            <strong>But I made a strategic choice:</strong> focus on professional websites and landing pages. <br><br>
+                            Why? Because most businesses don't need a complex application. They need a fast, elegant website that loads in 1 second, converts visitors into customers, and doesn't cost €5000.
+
+                        </p>
+                        <p>
+                            <!-- Why? Because most businesses don't need a complex application. They need a fast, elegant website that loads in 1 second, converts visitors into customers, and doesn't cost €5000. -->
+                        </p>
+                    </div>
+                    
+                    <div class="pourquoi-card">
+                        <h3>Benefits for you:</h3>
+                        <ul class="pourquoi-list">
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">⚡</span>
+                                <div>
+                                    <strong>Fast delivery</strong><br>
+                                    <span>A few days to 1 week</span>
+                                </div>
+                            </li>
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">💰</span>
+                                <div>
+                                    <strong>Fair prices (website / landing page)</strong><br>
+                                    <!-- <span>€790</span> -->
+                                    <span style="text-decoration: line-through; color: var(--text-dim); margin-right: 8px;">€790 / €390 </span>
+                                    <span style="color: #ff4d4d; font-weight: bold; font-size: 1.1rem;">€490 / €290</span>
+                                </div>
+                            </li>
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">🎯</span>
+                                <div>
+                                    <strong>Deliberate simplicity</strong><br>
+                                    <span>No unnecessary features to pay for</span>
+                                </div>
+                            </li>
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">🚀</span>
+                                <div>
+                                    <strong>Maximum performance</strong><br>
+                                    <span>Ultra-fast sites, SEO optimized</span>
+                                </div>
+                            </li>
+                            <li class="pourquoi-list-item">
+                                <span class="pourquoi-icon">✅</span>
+                                <div>
+                                    <strong>Zero surprises</strong><br>
+                                    <span>Fixed price, fixed deadline, clear scope</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Version -->
+            <div class="pourquoi-mobile">
+                <h2 class="text-center mb-2">Why websites?</h2>
+                
+                <div class="pourquoi-mobile-text">
+                    <p>
+                        With over 4 years of experience in web development I <strong>could</strong> create complex applications with sophisticated backends, dashboards, member areas...
+                    </p>
+                    <p>
+                        <strong>But I made a strategic choice:</strong> focus on professional websites and landing pages.
+                    </p>
+                    <p>
+                        Why? Because most businesses need a fast, elegant website that loads in 1 second - not a €5000 application.
+                    </p>
+                </div>
+                
+                <h3 class="text-center mb-2">Benefits:</h3>
+                
+                <div class="pourquoi-mobile-grid">
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>⚡</span>
+                            <strong>Fast delivery</strong>
+                        </div>
+                        <p>a few days to one week instead of 2-3 months</p>
+                    </div>
+                    
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>💰</span>
+                            <strong>Fair prices</strong>
+                        </div>
+                        <p>€790 instead of €2500+ at agencies</p>
+                    </div>
+                    
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>🎯</span>
+                            <strong>Simplicity</strong>
+                        </div>
+                        <p>No unnecessary features</p>
+                    </div>
+                    
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>🚀</span>
+                            <strong>Performance</strong>
+                        </div>
+                        <p>Ultra-fast sites, SEO optimized</p>
+                    </div>
+                    
+                    <div class="pourquoi-mobile-card">
+                        <div class="pourquoi-mobile-card-header">
+                            <span>✅</span>
+                            <strong>Zero surprises</strong>
+                        </div>
+                        <p>Fixed price, fixed deadline, clear scope</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Final message -->
+            <div class="pourquoi-footer stack-note">
+                <p>
+                    <strong>My goal:</strong> Deliver a professional website that does the job, without charging you for features you don't need.
+                </p>
+                <p>
+                    (And if you ever need a complex app, being also a fullstack developer, we can discuss it!)
+                </p>
+                <p>
+                    💡 <strong>Full stack:</strong> PHP, Laravel, Vue.js, MySQL for more complex projects if needed
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="tarifs" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="02.">Pricing</h2>
+            <p>Transparent, no surprises, adapted to your budget</p>
+        </div>
+
+        <div class="pricing-grid">
+            <!-- Landing Page -->
+            <div class="pricing-card-standard">
+                <div class="pricing-header">
+                    <h3 class="pricing-title pricing-title-standard">Landing Page</h3>
+                    <div class="pricing-old-price">€390</div>
+                    <div class="pricing-price">
+                        €290<span class="pricing-price-suffix"> excl. VAT</span>
+                    </div>
+                    <p class="pricing-promo">
+                        Save €100 - Limited offer
+                    </p>
+                </div>
+                
+                <ul class="pricing-features-list">
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">1 optimized single page</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Conversion-focused design</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Contact form</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Google Analytics configured</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Hosting configured</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Source code delivered</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Delivery 2-3 days</span>
+                    </li>
+                </ul>
+
+                <div class="pricing-cta">
+                    <a href="#contact" class="btn btn-secondary full-width">Request a quote</a>
+                </div>
+            </div>
+
+            <!-- Professional Website - FEATURED -->
+            <div class="pricing-card-featured">
+                <div class="pricing-badge">🔥 LAUNCH OFFER</div>
+                
+                <div class="pricing-header">
+                    <h3 class="pricing-title pricing-title-featured">Complete Professional Website</h3>
+                    <div class="pricing-old-price">€790</div>
+                    <div class="pricing-price">
+                        €490<span class="pricing-price-suffix"> excl. VAT</span>
+                    </div>
+                    <p class="pricing-promo">
+                        Save €300 - Limited offer
+                    </p>
+                </div>
+                
+                <ul class="pricing-features-list">
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text-bold">up to 5 complete sections / pages</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Modern and 100% responsive design</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Form with anti-spam</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Technical SEO optimization (tags, HTML structure, performance)</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Google Analytics configured</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Optimized performance</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Hosting configured</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text-bold">Source code delivered - 100% owner</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">15-day support (bugs)</span>
+                    </li>
+                    <li class="pricing-feature">
+                        <span class="pricing-feature-icon">✓</span>
+                        <span class="pricing-feature-text">Delivery 1 week</span>
+                    </li>
+                </ul>
+
+                <div class="pricing-cta">
+                    <a href="#contact" class="btn btn-primary full-width">Get this offer →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional services -->
+        <div class="pricing-options">
+            <h4>📦 Additional services</h4>
+            <div class="pricing-options-grid">
+                <ul class="pricing-options-list">
+                    <li class="pricing-options-item">• Additional section / Page: <span class="pricing-options-price">+€60</span></li>
+                    <li class="pricing-options-item">• Writing + content integration: <span class="pricing-options-price">+€60/page</span></li>
+                    <li class="pricing-options-item">• Post-delivery modifications: <span class="pricing-options-price"> FREE for 15 days (bug fixes, minor adjustments, typo corrections), then €40/h</span></li>
+                </ul>
+                <ul class="pricing-options-list">
+                    <li class="pricing-options-item">• Domain configuration: <span class="pricing-options-price">+€30</span></li>
+                    <li class="pricing-options-item">• One-time support: <span class="pricing-options-price">1h package: €40</span></li>
+                </ul>
+            </div>
+            <p class="pricing-options-note">
+                ℹ️ Hosting is free via Netlify (100 GB/month, more than enough for this type of project). Domain name (~€12/year) to be purchased separately by the client.
+            </p>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="03.">Process</h2>
+            <p>An efficient workflow for guaranteed results</p>
+        </div>
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-number">STEP 1</div>
+                <h3>Discussion & Quote</h3>
+                <p>Discussion about your needs, goals and budget. Preparation of a detailed quote and specifications.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">STEP 2</div>
+                <h3>Mockup & Design</h3>
+                <p>Creation of visual mockups to validate your site's appearance before development.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">STEP 3</div>
+                <h3>Development</h3>
+                <p>Site coding with best practices. Performance and SEO optimization.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">STEP 4</div>
+                <h3>Testing & Corrections</h3>
+                <p>Thorough testing on all devices. Corrections and adjustments based on your feedback.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">STEP 5</div>
+                <h3>Launch</h3>
+                <p>Site deployment on your hosting. Quick training to manage your content.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="04.">Frequently Asked Questions</h2>
+            <p>Answers to the most common questions</p>
+        </div>
+
+        <div class="faq-container">
+            <!-- Question 1 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">❓</span>
+                    <span class="faq-question-text">What is technical SEO optimization?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        It's the optimization of your site's structure and code so it's properly understood 
+                        and indexed by Google. This includes:
+                    </p>
+                    <ul>
+                        <li><strong>Meta tags</strong>: Optimized title and description</li>
+                        <li><strong>HTML structure</strong>: Clear hierarchy (H1, H2, H3)</li>
+                        <li><strong>Images</strong>: Descriptive alt attributes</li>
+                        <li><strong>Performance</strong>: Fast loading (< 2 sec)</li>
+                        <li><strong>Responsive</strong>: Mobile and tablet optimized</li>
+                        <li><strong>Technical files</strong>: Sitemap.xml and robots.txt</li>
+                    </ul>
+                    <p>
+                        <strong>In summary:</strong> Your site will be "Google-ready" and optimized to 
+                        appear in search results.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">🎯</span>
+                    <span class="faq-question-text">Will my site be on Google's first page?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        The technical SEO I implement <strong>prepares your site for Google</strong>, 
+                        but ranking depends on several factors:
+                    </p>
+                    <ul>
+                        <li><strong>Competition</strong>: How many other sites in your sector?</li>
+                        <li><strong>Time</strong>: Natural SEO takes 3 to 6 months minimum</li>
+                        <li><strong>Content</strong>: Quality and quantity of your texts</li>
+                        <li><strong>Authority</strong>: External links, domain age</li>
+                    </ul>
+                    <p>
+                        <strong>What I guarantee:</strong> Your site will be structured, fast and "SEO-ready". 
+                        But I can't guarantee a specific position.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">✏️</span>
+                    <span class="faq-question-text">Can I modify the site myself afterwards?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>Yes, absolutely! The site is 100% yours.</p>
+                    <p>✅ <strong>You own the source code:</strong></p>
+                    <ul>
+                        <li>Complete code delivered</li>
+                        <li>No dependencies</li>
+                        <li>Total freedom</li>
+                    </ul>
+                    <p>📝 <strong>Possible modifications:</strong></p>
+                    <ul>
+                        <li>Easy: Texts, images, contact</li>
+                        <li>Technical: Design, sections, form</li>
+                    </ul>
+                    <p>👥 <strong>Three options:</strong> </p>
+                    <ul>
+                        <li>Yourself (documentation + training)</li>
+                        <li>Me (€40/h package)</li>
+                        <li>Any developer (standard code)</li>
+                    </ul>
+
+                    💡 Important: You're never "stuck" with me
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">🛠️</span>
+                    <span class="faq-question-text">What happens after the 15-day support period?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>The <strong>15-day support</strong> includes:</p>
+                    <ul>
+                        <li>✅ Bug fixes</li>
+                        <li>✅ Minor adjustments (colors, spacing)</li>
+                        <li>✅ Text/image modifications</li>
+                        <li>✅ Technical support (email, phone)</li>
+                    </ul>
+                    <p><strong>After 15 days:</strong></p>
+                    <ul>
+                        <li>€40/h package</li>
+                        <li>Optional ongoing support based on your needs</li>
+                    </ul>
+                    <p>
+                        <strong>Important:</strong> The site is 100% yours. You can use any developer 
+                        (source code delivered). You can also make modifications yourself.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">💼</span>
+                    <span class="faq-question-text">Why choose a freelancer over an agency?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>Freelancer benefits:</strong></p>
+                    <ul>
+                        <li><strong>Fairer prices</strong>: an agency necessarily requires higher operating costs</li>
+                        <li><strong>Direct contact</strong>: You talk to the developer directly</li>
+                        <li><strong>Flexibility</strong>: Quick adaptation to your requests</li>
+                        <li><strong>Responsiveness</strong>: Quick response</li>
+                    </ul>
+                    <p><strong>When to choose an agency?</strong></p>
+                    <ul>
+                        <li>Very complex project (custom application, 50+ pages)</li>
+                        <li>Complete team needed (designer + dev + marketing)</li>
+                        <li>Substantial budget (€5000+)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">⚙️</span>
+                    <span class="faq-question-text">Do you make complex applications?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>I focus on professional websites and landing pages.</strong></p>
+                    <p><strong>Why this choice?</strong></p>
+                    <ul>
+                        <li>✅ Fast delivery in a few days / week instead of several months</li>
+                        <li>✅ Fair prices: up to €790 instead of €3000-10000</li>
+                        <li>✅ Simplicity: No complex bugs</li>
+                        <li>✅ Efficiency: Many businesses just need a simple website</li>
+                    </ul>
+                    <p><strong>However, being a fullstack developer I'm open to discussion.</strong></p>
+                    <p><strong>I also know excellent fullstack developers to recommend.</strong></p>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">📄</span>
+                    <span class="faq-question-text">Difference between Landing Page and Professional Website?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>Landing Page (€390):</strong></p>
+                    <ul>
+                        <li>📄 <strong>1 single targeted page</strong></li>
+                        <li>🎯 <strong>Precise goal</strong>: sell, collect emails, promote</li>
+                        <li>⚡ <strong>Fast</strong>: 2-3 days</li>
+                        <li>💰 <strong>Tight budget</strong>: Economic solution</li>
+                    </ul>
+                    <p><strong>Example:</strong> Product launch, webinar registration, ad campaign</p>
+                    
+                    <p><strong>Professional Website (€790):</strong></p>
+                    <ul>
+                        <li>📚 <strong>up to 5 complete sections / pages</strong></li>
+                        <li>🏢 <strong>Overall presentation</strong>: company, services, team</li>
+                        <li>📈 <strong>More complete</strong>: multiple goals</li>
+                        <li>⏱️ <strong>1 week</strong></li>
+                    </ul>
+                    <p><strong>Example:</strong> Bakery site, medical practice, artisan</p>
+                    
+                    <p><strong>How to choose?</strong></p>
+                    <ul>
+                        <li>✅ Landing: One-time need, event</li>
+                        <li>✅ Website: Lasting web presence</li>
+                    </ul>
+                    <p>💡 You can start with a Landing, then evolve to Website (+€300).</p>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">🎁</span>
+                    <span class="faq-question-text">How does the referral program work?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>Do you know someone who needs a website?</strong></p>
+                    <p>Recommend my services and <strong>receive 15% commission</strong> on each completed project!</p>
+                    
+                    <p>💰 <strong>How it works:</strong></p>
+                    <ol>
+                        <li>You recommend my services to your contact</li>
+                        <li>Your contact contacts me and becomes a client</li>
+                        <li>The project is delivered and paid in full</li>
+                        <li>You receive <strong>15% of the amount excl. VAT</strong> by transfer</li>
+                    </ol>
+                    
+                    <p>📊 <strong>Commission examples:</strong></p>
+                    <ul>
+                        <li>Landing Page (€490) → <strong>€73.50</strong> for you</li>
+                        <li>Professional Website (€790) → <strong>€118.50</strong> for you</li>
+                        <li>Redesign (on quote) → <strong>15%</strong> of amount</li>
+                    </ul>
+                    
+                    <p>✅ <strong>Conditions:</strong></p>
+                    <ul>
+                        <li>Commission paid after full client payment</li>
+                        <li>Transfer within 7 business days</li>
+                        <li>Unlimited accumulation (recommend 10 clients = 10 commissions)</li>
+                        <li>Valid for all project types</li>
+                        <li>Invoice required if you're a professional</li>
+                    </ul>
+                    
+                    <p>🤝 <strong>Simple and win-win:</strong> Your contact gets a professional site at fair price, you're rewarded for the recommendation!</p>
+                    
+                    <p>💡 <strong>Interested?</strong> Contact me for more details.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA after FAQ -->
+        <div class="faq-cta">
+            <p>Another question?</p>
+            <a href="#contact" class="btn btn-primary">Contact me →</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="05.">Contact</h2>
+            <p>Let's talk about your project</p>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrapper">
+            <div class="contact-form-card">
+                <h3 class="contact-form-title">📧 Free Quote Request</h3>
+                
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" netlify action="/success.html">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p style="display: none;">
+                        <label>Don't fill this: <input name="bot-field" /></label>
+                    </p>
+
+                    <div class="form-group">
+                        <label for="name">Full name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="contact@example.com" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project">Project type *</label>
+                        <select id="project" name="project" required>
+                            <option value="">-- Select --</option>
+                            <option value="site-vitrine">Professional Website</option>
+                            <option value="landing-page">Landing Page</option>
+                            <option value="refonte">Existing site redesign</option>
+                            <option value="maintenance">Maintenance</option>
+                            <option value="autre">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Describe your project *</label>
+                        <textarea id="message" name="message" required rows="6" placeholder="Describe your need, goals, desired timeline..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full-width">
+                        Send my request →
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Contact info -->
+        <div class="contact-grid">
+            <div class="contact-item email">
+                <span class="contact-icon">📧</span>
+                <h3>Email</h3>
+                <a href="mailto:damienbanville@hotmail.fr">damienbanville@hotmail.fr</a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">📱</span>
+                <h3>Whatsapp</h3>
+                <a href="tel:+33606579020">+33 6 06 57 90 20</a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">💼</span>
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/damien-banville-213523109/" target="_blank" class="social-link">
+                    /my-profile →
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <h3>Location</h3>
+                <p class="contact-location">Paris Region (France)<br>Remote work<br>Travel possible</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="referral-program">
+            <p class="referral-text">
+                💡 Referral program: <strong>15% commission</strong> 
+                for any successful recommendation. Interested? Contact me for more details.
+            </p>
+        </div>
+        <p>&copy; 2025 - Damien Freelance Web Developer</p>
+        <p>Designed and developed with passion ❤️</p>
+        <p style="font-size: 0.85rem; margin-top: 1rem; color: var(--text-dim);">
+            This site uses Google Analytics to measure audience.
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
