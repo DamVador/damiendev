@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Mentions Légales - Développeur Web Freelance</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Variables */
+        :root {
+            --primary: #0A0E27;
+            --accent: #00D9FF;
+            --accent-dark: #0099FF;
+            --secondary: #FF6B35;
+            --text: #E8E9ED;
+            --text-dim: #9BA4B5;
+            --bg: #0F1419;
+            --bg-card: #1A1F2E;
+            --bg-elevated: #252B3B;
+            --font-mono: 'JetBrains Mono', monospace;
+            --font-sans: 'Outfit', sans-serif;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+            --spacing-xl: 6rem;
+            --border-radius: 12px;
+            --border-radius-sm: 8px;
+            --transition-fast: 0.3s;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-sans);
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--bg);
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--bg-card) 100%);
+            border-bottom: 2px solid var(--accent);
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-family: var(--font-mono);
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--text);
+            margin-bottom: var(--spacing-sm);
+            font-weight: 700;
+        }
+        
+        .header h1 span {
+            color: var(--accent);
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-family: var(--font-mono);
+            font-size: 0.95rem;
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--accent);
+            border-radius: var(--border-radius-sm);
+            transition: all var(--transition-fast);
+        }
+        
+        .back-link:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 217, 255, 0.3);
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--spacing-lg) var(--spacing-md);
+        }
+        
+        .content {
+            background: var(--bg-card);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(0, 217, 255, 0.1);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+        
+        h2 {
+            font-family: var(--font-mono);
+            color: var(--accent);
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-md);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 2px solid var(--accent);
+            font-size: 1.75rem;
+            font-weight: 700;
+        }
+        
+        h2:first-child {
+            margin-top: 0;
+        }
+        
+        h3 {
+            color: var(--text);
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-dim);
+            line-height: 1.8;
+        }
+        
+        strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+        
+        ul {
+            margin: var(--spacing-sm) 0 var(--spacing-md) var(--spacing-md);
+            color: var(--text-dim);
+        }
+        
+        li {
+            margin-bottom: var(--spacing-xs);
+            padding-left: var(--spacing-xs);
+        }
+        
+        li::marker {
+            color: var(--accent);
+        }
+        
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+        
+        a:hover {
+            color: var(--accent-dark);
+            text-decoration: underline;
+        }
+        
+        .highlight {
+            background: var(--bg-elevated);
+            padding: var(--spacing-md);
+            border-left: 4px solid var(--accent);
+            border-radius: var(--border-radius-sm);
+            margin: var(--spacing-md) 0;
+        }
+        
+        .highlight p {
+            color: var(--text);
+            margin: 0;
+        }
+        
+        .info-box {
+            background: var(--bg-elevated);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius-sm);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            margin: var(--spacing-md) 0;
+        }
+        
+        .info-box h3 {
+            color: var(--accent);
+            margin-top: 0;
+            font-size: 1.125rem;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: var(--spacing-xl);
+            padding-top: var(--spacing-lg);
+            border-top: 2px solid var(--bg-card);
+        }
+        
+        .footer p {
+            color: var(--text-dim);
+            font-size: 0.875rem;
+        }
+        
+        code {
+            font-family: var(--font-mono);
+            background: var(--bg-elevated);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            color: var(--accent);
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: var(--spacing-md) var(--spacing-sm);
+            }
+            
+            .content {
+                padding: var(--spacing-md) var(--spacing-sm);
+            }
+            
+            .header {
+                padding: var(--spacing-md) var(--spacing-sm);
+            }
+            
+            .header h1 {
+                font-size: 1.75rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1><span>&lt;</span> Mentions Légales <span>/&gt;</span></h1>
+        <p style="margin: var(--spacing-sm) 0;">
+            <a href="/" class="back-link">← Retour à l'accueil</a>
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            
+            <h2>1. Éditeur du site</h2>
+            <div class="highlight">
+                <p>
+                    <strong>Nom :</strong> Damien Banville<br>
+                    <strong>Statut :</strong> Auto-entrepreneur <br>
+                    <strong>SIRET :</strong> 89206207600013<br>
+                    <strong>Ville :</strong> Arcueil<br>
+                    <strong>Email :</strong> damienbanville@hotmail.fr<br>
+                    <strong>Téléphone :</strong> +33606579020
+                </p>
+            </div>
+            
+            <h2>2. Directeur de la publication</h2>
+            <p>
+                Le directeur de la publication du site est <strong>Damien Banville</strong>.
+            </p>
+            
+            <h2>3. Hébergement</h2>
+            <p>
+                Ce site est hébergé par :<br>
+                Github Pages
+                <!-- <strong>Netlify, Inc.</strong><br>
+                2325 3rd Street, Suite 296<br>
+                San Francisco, CA 94107, USA<br>
+                Site web : <a href="https://www.netlify.com" target="_blank">www.netlify.com</a> -->
+            </p>
+            
+            <h2>4. Propriété intellectuelle</h2>
+            <p>
+                L'ensemble de ce site (structure, code, textes, images, logo, etc.) 
+                relève de la législation française et internationale sur le droit d'auteur 
+                et la propriété intellectuelle.
+            </p>
+            <p>
+                Tous les droits de reproduction sont réservés, y compris pour les 
+                documents téléchargeables et les représentations iconographiques.
+            </p>
+            <p>
+                Toute reproduction, même partielle, est interdite sans l'autorisation 
+                expresse de <strong>Damien Banville</strong>.
+            </p>
+            
+            <h2>5. Protection des données personnelles (RGPD)</h2>
+            <p>
+                Conformément au Règlement Général sur la Protection des Données (RGPD) 
+                et à la loi "Informatique et Libertés", vous disposez d'un droit d'accès, 
+                de rectification, de suppression et d'opposition aux données personnelles 
+                vous concernant.
+            </p>
+            
+            <div class="info-box">
+                <h3>📋 Données collectées</h3>
+                <p>
+                    Les informations recueillies via le formulaire de contact sont :
+                </p>
+                <ul>
+                    <li>Nom et prénom</li>
+                    <li>Adresse email</li>
+                    <li>Numéro de téléphone (optionnel)</li>
+                    <li>Message ou demande</li>
+                </ul>
+            </div>
+            
+            <div class="info-box">
+                <h3>🎯 Finalité du traitement</h3>
+                <p>
+                    Ces données sont collectées uniquement pour :
+                </p>
+                <ul>
+                    <li>Répondre à vos demandes de contact</li>
+                    <li>Établir des devis pour vos projets</li>
+                    <li>Assurer le suivi de projets web</li>
+                </ul>
+            </div>
+            
+            <div class="info-box">
+                <h3>🔒 Conservation des données</h3>
+                <p>
+                    Vos données sont conservées pendant la durée nécessaire au traitement 
+                    de votre demande, puis supprimées conformément aux obligations légales.
+                </p>
+                <p style="margin-top: var(--spacing-sm);">
+                    Elles ne sont <strong>jamais</strong> vendues ou cédées à des tiers.
+                </p>
+            </div>
+            
+            <div class="info-box">
+                <h3>✅ Vos droits</h3>
+                <p>
+                    Pour exercer vos droits (accès, rectification, suppression, opposition), 
+                    contactez-moi à : <strong>damienbanville@hotmail.fr</strong>
+                </p>
+            </div>
+            
+            <h2>6. Cookies et statistiques</h2>
+            <p>
+                Ce site utilise Google Analytics pour analyser l'audience et améliorer 
+                l'expérience utilisateur.
+            </p>
+            
+            <h3>📊 Données collectées</h3>
+            <p>
+                Les cookies Google Analytics collectent des informations <strong>anonymes</strong> :
+            </p>
+            <ul>
+                <li>Pages visitées</li>
+                <li>Durée de visite</li>
+                <li>Type d'appareil et navigateur</li>
+                <li>Provenance géographique (pays/ville)</li>
+            </ul>
+            
+            <h3>🛠️ Comment désactiver les cookies ?</h3>
+            <p>
+                Vous pouvez désactiver les cookies dans les paramètres de votre navigateur :
+            </p>
+            <ul>
+                <li><strong>Chrome :</strong> Paramètres > Confidentialité et sécurité > Cookies</li>
+                <li><strong>Firefox :</strong> Options > Vie privée et sécurité</li>
+                <li><strong>Safari :</strong> Préférences > Confidentialité</li>
+            </ul>
+            <p>
+                Vous pouvez également installer l'extension 
+                <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">
+                    Google Analytics Opt-out
+                </a> pour bloquer spécifiquement Google Analytics.
+            </p>
+            
+            <h2>7. Liens externes</h2>
+            <p>
+                Ce site peut contenir des liens vers d'autres sites web. 
+                <strong>Damien Banville</strong> n'est pas responsable du contenu de ces 
+                sites externes ni de leur politique de confidentialité.
+            </p>
+            
+            <h2>8. Limitation de responsabilité</h2>
+            <p>
+                <strong>Damien Banville</strong> s'efforce d'assurer l'exactitude et la mise 
+                à jour des informations diffusées sur ce site, mais ne peut garantir 
+                l'exactitude, la précision ou l'exhaustivité des informations mises à disposition.
+            </p>
+            <p>
+                <strong>Damien Banville</strong> ne pourra être tenu responsable des dommages 
+                directs ou indirects résultant de l'utilisation de ce site ou de sites 
+                externes liés.
+            </p>
+            
+            <h2>9. Droit applicable</h2>
+            <p>
+                Les présentes mentions légales sont soumises au droit français. 
+                En cas de litige, les tribunaux français seront seuls compétents.
+            </p>
+            
+            <div class="footer">
+                <p>
+                    <strong>Dernière mise à jour :</strong> Décembre 2025
+                </p>
+                <p style="margin-top: var(--spacing-md);">
+                    <a href="/" class="back-link">← Retour à l'accueil</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
