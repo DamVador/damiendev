@@ -532,6 +532,8 @@ label {
 
 .current-lang {
     font-size: 1.3rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .dropdown-arrow {
