@@ -509,7 +509,6 @@ label {
 .lang-dropdown {
     position: relative;
     list-style: none;
-    order: -1;
     margin-right: auto;
 }
 
