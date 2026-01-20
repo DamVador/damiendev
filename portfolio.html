@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Basic -->
+    <title>Portfolio Complet - Damien Banville | Développeur Fullstack</title>
+    <meta name="description" content="Portfolio complet de Damien Banville : applications web complexes, dashboards, APIs REST. Développeur fullstack PHP, Laravel, Vue.js, MySQL.">
+    <meta name="keywords" content="développeur fullstack, Laravel, Vue.js, PHP, MySQL, API REST, dashboard, application web">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://damienbanville-dev.fr/portfolio.html">
+    <meta property="og:title" content="Portfolio Complet - Damien Banville | Développeur Fullstack">
+    <meta property="og:description" content="Applications web complexes, dashboards, APIs REST. Développeur fullstack spécialisé en sites vitrines.">
+    <meta property="og:image" content="https://damienbanville-dev.fr/assets/images/og-image.jpg">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHK0WNXVR7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DHK0WNXVR7');
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Custom styles for portfolio page -->
+    <style>
+        /* Ton légèrement différent pour portfolio.html */
+        body {
+            background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+        }
+        
+        .portfolio-advanced .portfolio-card {
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .portfolio-advanced h2 {
+            color: var(--secondary);
+        }
+        
+        .portfolio-advanced .tag {
+            background: rgba(138, 43, 226, 0.1);
+            border-color: rgba(138, 43, 226, 0.3);
+        }
+        
+        .portfolio-advanced .tag:hover {
+            background: var(--secondary);
+        }
+        
+        .back-to-main {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .back-to-main:hover {
+            color: var(--accent);
+            transform: translateX(-5px);
+        }
+        
+        .specialization-note {
+            background: rgba(138, 43, 226, 0.05);
+            border: 1px solid rgba(138, 43, 226, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 3rem auto;
+            max-width: 900px;
+            text-align: center;
+        }
+        
+        .specialization-note h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .specialization-note p {
+            color: var(--text-dim);
+            line-height: 1.8;
+            margin-bottom: 0.5rem;
+        }
+        
+        .specialization-note strong {
+            color: var(--text);
+        }
+    </style>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+</head>
+<body>
+    <div class="bg-animated"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="portfolio.html" class="logo">Damien.Banville</a>
+            
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul>
+                <!-- <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#tarifs">Tarifs</a></li>
+                <li><a href="index.html#portfolio">Sites Vitrines</a></li> -->
+                <li><a href="#portfolio-advanced" class="active">Portfolio</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <!-- <a href="index.html" class="back-to-main">
+                ← Retour aux services principaux
+            </a> -->
+            
+            <div class="hero-text" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h1>
+                    Portfolio<br>
+                    <span class="highlight" style="background: linear-gradient(135deg, var(--secondary), #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Complet</span>
+                </h1>
+                <p class="subtitle">
+                    <strong>Développeur fullstack avec 4+ ans d'expérience en PHP et JavaScript.</strong>
+                </p>
+                <p class="subtitle">
+                    J'ai notamment travaillé en CDI à Paris en tant que développeur Fullstack sur une dizaine de projets web PHP, incluant des projets Laravel, Slim ou encore Wordpress.
+                    J'ai également travaillé à distance pour une entreprise japonaise sur un projet autour de la gestion de drones et réalisé divers projets personnels.
+                    <br> J'aime voir les projets web passés du stade d'idée à application concrète et utile, ce qui me motive à toujours vouloir coder d'avantage.
+                    <!-- <br><strong>Actuellement spécialisé en sites vitrines</strong> pour des livraisons rapides et des tarifs accessibles. -->
+                </p>
+                
+                <div class="status" style="justify-content: center;">
+                    <span class="status-dot"></span>
+                    Disponible pour projets sur-mesure
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sites Vitrines Link Section -->
+    <!-- <section class="fade-in" style="padding: 40px 20px;">
+        <div class="container" style="max-width: 900px; margin: 0 auto;">
+            <div style="background: rgba(0, 212, 255, 0.05); border: 1px solid rgba(0, 212, 255, 0.2); border-radius: 12px; padding: 2rem; text-align: center;">
+                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--accent);">
+                    🌐 Sites Vitrines & Landing Pages
+                </h2>
+                <p style="color: var(--text-dim); margin-bottom: 1.5rem; line-height: 1.6;">
+                    <strong>Mon cœur de métier actuel</strong> : création de sites vitrines et landing pages professionnels. 
+                    Livraison rapide (1 semaine), tarifs accessibles (à partir de 290€).
+                </p>
+                <a href="index.html#portfolio" class="btn btn-primary">
+                    Voir mes sites vitrines →
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Advanced Portfolio Section -->
+    <section id="portfolio-advanced" class="fade-in portfolio-advanced">
+        <div class="section-header">
+            <h2 data-number="01.">Projets Techniques Avancés</h2>
+            <p>Applications web complexes et développements sur-mesure</p>
+        </div>
+        
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <!-- <img src="assets/images/portfolio-advanced-1.png" alt="Projet Application Web" onerror="this.src='assets/images/placeholder-project.png'"> -->
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-badge">Application Web</span>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Hanyu VocabTracker</h3>
+                    <p class="portfolio-type">Application Web Fullstack</p>
+                    <p class="portfolio-description">
+                        Application d'aide à l'apprentissage du vocabulaire chinois avec un parcours à part entière pour le HSK. 
+                        S'appuie sur un algorithme de répétition pour la mémorisation et où l'utilisateur peut choisir son mode de préférence pour tester ses connaissances.
+                    </p>
+                    <a href="https://hanyu-vocabtracker.com/" target="_blank" rel="noopener noreferrer" class="portfolio-link-btn">
+                        Voir le projet →
+                    </a>
+                   
+                    <div class="portfolio-features">
+                        <span class="feature-item">✓ Authentification sécurisée</span>
+                        <span class="feature-item">✓ Mode Analytics</span>
+                        <span class="feature-item">✓ Export/Import du vocabulaire</span>
+                        <span class="feature-item">✓ API REST</span>
+                    </div>
+                    <div class="portfolio-tags">
+                        <span class="tag">Laravel</span>
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Chart.js</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 2 : À PERSONNALISER -->
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <!-- <img src="assets/images/portfolio-advanced-2.png" alt="API REST" onerror="this.src='assets/images/placeholder-project.png'"> -->
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-badge">Application Web</span>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <h3> VidNotes </h3>
+                    <p class="portfolio-type">Application Web Fullstack</p>
+                    <p class="portfolio-description">
+                        Application pour écrire des notes sur le contenu des vidéos.
+                        Système de recherche par tag et mot clés pour retrouver efficacement ses notes.
+                    </p>
+                    <a href="https://vid-notescom/" target="_blank" rel="noopener noreferrer" class="portfolio-link-btn">
+                        Voir le projet →
+                    </a>
+                    <div class="portfolio-features">
+                        <span class="feature-item">✓ OAuth API</span>
+                        <span class="feature-item">✓ Tests unitaires</span>
+                        <span class="feature-item">✓ Export des notes</span>
+                        <span class="feature-item">✓ Youtube API</span>
+                    </div>
+                    <div class="portfolio-tags">
+                        <span class="tag">Laravel</span>
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">MySql</span>
+                        <span class="tag">PHPUnit</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 3 : À PERSONNALISER -->
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <!-- <img src="assets/images/portfolio-advanced-3.png" alt="Système de Gestion" onerror="this.src='assets/images/placeholder-project.png'"> -->
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-badge">Système de Gestion</span>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <h3>COSMOS</h3>
+                    <p class="portfolio-type">Application Web Fullstack</p>
+                    <p class="portfolio-description">
+                        Application de gestion de drones avec planification et automatisation d'un trajet de vol.
+                        Support via HUD pour un control du drone via l'application, diffusion streaming des caméras du trone et suivis sur des cartes 2D et 3D.
+                    </p>
+                    <div class="portfolio-features">
+                        <span class="feature-item">✓ Trajectoire de drone via waypoints</span>
+                        <span class="feature-item">✓ HUD</span>
+                        <span class="feature-item">✓ Gestion des rôles</span>
+                        <span class="feature-item">✓ Diffusion live</span>
+                    </div>
+                    <div class="portfolio-tags">
+                        <span class="tag">Userfrosting</span>
+                        <span class="tag">Javascript</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">GoogleMap API / Cesium API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialization Note -->
+    <!-- <section class="fade-in">
+        <div class="container">
+            <div class="specialization-note">
+                <h3>💡 Ma Spécialisation Actuelle</h3>
+                <p>
+                    <strong>Bien que je possède les compétences pour réaliser des projets complexes</strong> 
+                    (comme ceux présentés ci-dessus), j'ai fait le <strong>choix stratégique</strong> de me 
+                    concentrer sur les <strong>sites vitrines et landing pages</strong>.
+                </p>
+                <p>
+                    <strong>Pourquoi ?</strong> Pour offrir des <strong>livraisons rapides</strong> (1 semaine), 
+                    des <strong>tarifs accessibles</strong> (à partir de 290€) et une <strong>qualité constante</strong>. 
+                    La majorité des entreprises ont besoin d'une présence web simple et efficace, pas d'une application complexe.
+                </p>
+                <p style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(138, 43, 226, 0.2);">
+                    <strong>Projets complexes :</strong> Je peux toujours prendre des projets avancés sur devis, 
+                    mais ils ne sont plus ma priorité commerciale. Contactez-moi pour en discuter.
+                </p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Stack Technique Complete -->
+    <section id="stack" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="02.">Stack Technique Complète</h2>
+            <p>Technologies maîtrisées pour projets simples et complexes</p>
+        </div>
+        
+        <div class="stack-grid">
+            <div class="stack-category">
+                <h3>Backend</h3>
+                <div class="stack-tags">
+                    <span class="tag">PHP</span>
+                    <span class="tag">Laravel</span>
+                    <span class="tag">Userfrosting</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">API REST</span>
+                </div>
+            </div>
+            
+            <div class="stack-category">
+                <h3>Frontend</h3>
+                <div class="stack-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Vue.js</span>
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">Tailwind</span>
+                    <span class="tag">Bootstrap</span>
+                </div>
+            </div>
+            
+            <div class="stack-category">
+                <h3>Outils & DevOps</h3>
+                <div class="stack-tags">
+                    <span class="tag">Git</span>
+                    <span class="tag">GitHub</span>
+                    <span class="tag">Composer</span>
+                    <span class="tag">NPM</span>
+                    <span class="tag">Wordpress</span>
+                </div>
+            </div>
+            
+            <!-- <div class="stack-category">
+                <h3>Tests & Qualité</h3>
+                <div class="stack-tags">
+                    <span class="tag">PHPUnit</span>
+                    <span class="tag">Postman</span>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <!-- <section class="fade-in">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 3rem 2rem; background: rgba(138, 43, 226, 0.05); border: 2px solid rgba(138, 43, 226, 0.2); border-radius: 16px;">
+                <h2 style="color: var(--secondary); font-size: 2rem; margin-bottom: 1rem;">
+                    Besoin d'un Projet Sur-Mesure ?
+                </h2>
+                <p style="color: var(--text-dim); font-size: 1.1rem; margin-bottom: 2rem; line-height: 1.8;">
+                    Que ce soit pour un <strong>site vitrine simple</strong>  
+                    ou une <strong>application plus complexe</strong>, discutons de votre besoin.
+                </p>
+                
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="index.html#contact" class="btn btn-primary">
+                        Démarrer un projet →
+                    </a>
+                    <a href="index.html" class="btn btn-secondary">
+                        ← Services principaux
+                    </a>
+                </div>
+                
+                <p style="margin-top: 2rem; font-size: 0.9rem; color: var(--text-dim);">
+                    💰 <strong>Sites vitrines</strong> : à partir de 290€ • Livraison en 2-7 jours<br>
+                    🔧 <strong>Projets complexes</strong> : sur devis personnalisé
+                </p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <div class="section-header">
+            <h2 data-number="03.">Contact</h2>
+            <p> Que ce soit pour un <strong>site vitrine simple</strong>  
+                ou une <strong>application plus complexe</strong>, discutons de votre besoin.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-item email">
+                <span class="contact-icon">📧</span>
+                <h3>Email</h3>
+                <a href="mailto:damienbanville@hotmail.fr">damienbanville@hotmail.fr</a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">📱</span>
+                <h3>WhatsApp</h3>
+                <a href="tel:+33606579020">+33 6 06 57 90 20</a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">💼</span>
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/damien-banville-213523109/" target="_blank" rel="noopener noreferrer" class="social-link">
+                    /mon-profil →
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <h3>Localisation</h3>
+                <p class="contact-location">Île-de-France<br>Interventions à distance<br>Déplacements possible</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Conçu et développé avec passion ❤️</p>
+        <p class="mt-sm">
+            <small>
+                &copy; 2026 - Damien Développeur Web Freelance | 
+                <a href="./mentions-legales.html">Mentions légales</a> 
+                <!-- <a href="index.html">Services principaux</a> -->
+            </small>
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
